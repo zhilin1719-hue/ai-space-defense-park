@@ -1,0 +1,1483 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230E4DA4'/%3E%3Ctext x='32' y='43' font-size='28' text-anchor='middle' fill='white' font-family='sans-serif'%3E空%3C/text%3E%3C/svg%3E">
+<title>AI+空天防务产业园项目商业计划书（省级可复制落地方案）</title>
+<style>
+:root{
+  --blue:#0E4DA4; --blue-deep:#16243D; --red:#C8102E; --bg:#F2F5FA;
+  --blue-2:#5B8DD9; --blue-3:#9DBEEB; --gray:#8A97A8; --line:#DCE3EE;
+  --white:#ffffff; --soft:#EDF2FA; --gold:#C9A24B;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"Microsoft YaHei","微软雅黑","PingFang SC","Hiragino Sans GB",sans-serif;background:var(--bg);color:var(--blue-deep);font-size:15px;line-height:1.8}
+a{color:var(--blue);text-decoration:none}
+ul,ol{padding-left:1.4em}
+li{margin:4px 0}
+/* ---------- 布局 ---------- */
+.sidebar{position:fixed;top:0;left:0;bottom:0;width:258px;background:var(--blue-deep);color:#DCE6F5;overflow-y:auto;padding:22px 0;z-index:30}
+.sidebar .brand{padding:0 20px 16px;border-bottom:1px solid rgba(255,255,255,.12);font-size:15px;font-weight:700;line-height:1.5}
+.sidebar .brand small{display:block;font-weight:400;color:#93A7C6;font-size:12px;margin-top:6px}
+.sidebar nav{padding:12px 0}
+.sidebar nav a{display:block;padding:7px 20px;color:#C9D8EE;font-size:13.5px;border-left:3px solid transparent}
+.sidebar nav a:hover{background:rgba(255,255,255,.08);border-left-color:var(--blue-3);color:#fff}
+.sidebar nav a .n{display:inline-block;width:34px;color:#8FB0DE}
+.main{margin-left:258px;min-height:100vh}
+.wrap{max-width:1080px;margin:0 auto;padding:0 28px}
+/* ---------- 封面 ---------- */
+.cover{background:linear-gradient(135deg,#0B3B86 0%,#0E4DA4 55%,#16243D 100%);color:#fff;padding:88px 0 64px;position:relative;overflow:hidden}
+.cover::before{content:"";position:absolute;right:-120px;top:-120px;width:380px;height:380px;border:1px solid rgba(255,255,255,.08);border-radius:50%}
+.cover::after{content:"";position:absolute;right:-40px;bottom:-160px;width:300px;height:300px;border:1px solid rgba(255,255,255,.07);border-radius:50%}
+.cover .kicker{font-size:15px;letter-spacing:6px;color:#9DBEEB;margin-bottom:26px}
+.cover h1{font-size:40px;font-weight:800;letter-spacing:2px;margin-bottom:18px;position:relative;z-index:2}
+.cover .subtitle{font-size:22px;color:#D7E4F7;margin-bottom:40px;position:relative;z-index:2}
+.cover .meta{display:flex;flex-wrap:wrap;gap:28px 48px;font-size:15px;color:#C9D8EE;position:relative;z-index:2}
+.cover .meta b{display:block;color:#fff;font-size:17px;margin-top:4px}
+.cover .seal{margin-top:36px;display:inline-block;border:1px solid rgba(200,162,75,.7);color:#E7CF9A;padding:8px 18px;font-size:14px;letter-spacing:2px;position:relative;z-index:2}
+/* ---------- 合规声明条 ---------- */
+.compliance{background:#FBF1F2;border-left:4px solid var(--red);color:#7A1626;margin:26px 0;padding:18px 22px;border-radius:0 6px 6px 0;font-size:14px}
+.compliance b{color:var(--red)}
+/* ---------- 章节 ---------- */
+section.chapter{background:var(--white);border-radius:8px;margin:26px 0;padding:34px 36px;box-shadow:0 1px 4px rgba(22,36,61,.06)}
+section.chapter h2{font-size:24px;color:var(--blue);border-bottom:2px solid var(--blue);padding-bottom:12px;margin-bottom:8px;display:flex;align-items:baseline;gap:14px}
+section.chapter h2 .num{font-size:15px;color:#fff;background:var(--blue);padding:3px 12px;border-radius:4px;font-weight:700}
+.chapter-lead{color:var(--gray);font-size:14px;margin:10px 0 22px}
+h3{font-size:17.5px;color:var(--blue-deep);margin:28px 0 14px;padding-left:10px;border-left:4px solid var(--blue-2)}
+h4{font-size:15.5px;margin:18px 0 10px;color:var(--blue)}
+p{margin:10px 0}
+/* ---------- 卡片与指标 ---------- */
+.grid{display:grid;gap:16px}
+.g4{grid-template-columns:repeat(4,1fr)}
+.g3{grid-template-columns:repeat(3,1fr)}
+.g2{grid-template-columns:repeat(2,1fr)}
+.card{background:var(--soft);border-radius:8px;padding:18px 18px}
+.card h5{font-size:13.5px;color:var(--gray);font-weight:600;margin-bottom:8px}
+.card .v{font-size:22px;font-weight:800;color:var(--blue)}
+.card .v small{font-size:13px;font-weight:400;color:var(--gray);margin-left:4px}
+.card .note{font-size:12.5px;color:var(--gray);margin-top:6px}
+.stat-red .v{color:var(--red)}
+/* ---------- 表格 ---------- */
+table{width:100%;border-collapse:collapse;margin:16px 0;font-size:13.8px;table-layout:fixed}
+th{background:var(--blue);color:#fff;padding:10px 12px;text-align:left;font-weight:600}
+td{padding:9px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+tr:nth-child(even) td{background:#F7F9FD}
+/* ---------- 图表 ---------- */
+.chart-box{background:#fff;border:1px solid var(--line);border-radius:8px;padding:16px 14px 8px;margin:20px 0}
+.chart-box .cap{font-size:14px;font-weight:700;color:var(--blue-deep);margin:2px 6px 4px}
+.chart-box .src{font-size:12px;color:var(--gray);margin:2px 6px 8px}
+.chart{width:100%;height:380px}
+.chart-tall{height:420px}
+.chart-row{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+/* ---------- 时间线 ---------- */
+.timeline{position:relative;margin:24px 0;padding-left:28px}
+.timeline::before{content:"";position:absolute;left:9px;top:4px;bottom:4px;width:2px;background:var(--blue-3)}
+.tl-item{position:relative;margin:16px 0}
+.tl-item::before{content:"";position:absolute;left:-24px;top:7px;width:12px;height:12px;border-radius:50%;background:var(--blue);border:2px solid #fff;box-shadow:0 0 0 2px var(--blue-3);box-sizing:border-box}
+.tl-item .date{font-weight:700;color:var(--blue)}
+.tl-item .body{font-size:14px}
+/* ---------- 提示框 ---------- */
+.note-box{background:var(--soft);border-left:4px solid var(--blue-2);padding:14px 18px;border-radius:0 6px 6px 0;margin:18px 0;font-size:14px}
+.warn-box{background:#FBF1F2;border-left:4px solid var(--red);padding:14px 18px;border-radius:0 6px 6px 0;margin:18px 0;font-size:14px;color:#7A1626}
+.tag{display:inline-block;background:var(--blue-3);color:var(--blue-deep);border-radius:4px;padding:1px 9px;font-size:12px;margin:2px 4px 2px 0}
+/* ---------- 目录(正文内) ---------- */
+.toc-list{columns:2;gap:32px;margin-top:14px}
+.toc-list a{display:block;padding:6px 0;border-bottom:1px dashed var(--line)}
+.table-scroll{width:100%;max-width:100%;overflow-x:auto;margin:16px 0;-webkit-overflow-scrolling:touch}
+.table-scroll table{margin:0}
+/* ---------- 回到顶部 ---------- */
+#toTop{position:fixed;right:26px;bottom:34px;width:44px;height:44px;border-radius:50%;background:var(--blue);color:#fff;border:none;font-size:18px;cursor:pointer;box-shadow:0 4px 14px rgba(14,77,164,.35);z-index:40;display:none}
+#toTop:hover{background:var(--blue-deep)}
+footer.foot{margin:34px 0;padding:26px 0 40px;color:var(--gray);font-size:13px;text-align:center}
+/* ---------- 响应式 ---------- */
+@media (max-width:960px){
+  .sidebar{position:relative;width:100%;height:auto;max-height:none;padding:14px 0}
+  .main{margin-left:0}
+  .g4{grid-template-columns:repeat(2,1fr)}
+  .g3{grid-template-columns:1fr}
+  .g2{grid-template-columns:1fr}
+  .chart-row{grid-template-columns:1fr}
+  .chart{height:320px}
+  .cover{padding:56px 0 44px}
+  .cover h1{font-size:28px}
+  .cover .subtitle{font-size:18px}
+  section.chapter{padding:22px 18px;margin:16px 0}
+  .wrap{padding:0 16px}
+  .toc-list{columns:1}
+}
+/* ---------- 打印 ---------- */
+@media print{
+  body{background:#fff;font-size:12px}
+  .sidebar,#toTop{display:none!important}
+  .main{margin-left:0}
+  section.chapter{box-shadow:none;border:none;border-bottom:1px solid #ccc;break-inside:avoid-page;margin:0;padding:18px 0}
+  .chart{height:300px}
+  .cover{padding:40px 0}
+  .chart-box,.card{break-inside:avoid}
+  a{color:var(--blue-deep)}
+}
+
+/* ===== 多媒体版：图片 / 视频 / 画廊 ===== */
+.fig-row{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin:18px 0 10px}
+.fig-row.three{grid-template-columns:repeat(3,1fr)}
+figure{margin:0;background:#fff;border:1px solid #E3E9F4;border-radius:10px;overflow:hidden;box-shadow:0 1px 3px rgba(22,36,61,.06)}
+figure img{width:100%;height:210px;object-fit:cover;display:block;background:#F2F5FA}
+figcaption{font-size:12px;color:var(--gray);padding:8px 12px;line-height:1.55}
+.video-box{margin:20px 0;border:1px solid #E3E9F4;border-radius:10px;overflow:hidden;background:#000}
+.video-box video{width:100%;display:block;background:#000;max-height:640px}
+.video-note{font-size:12px;color:var(--gray);margin:8px 0 0}
+.gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:16px 0}
+.gallery figure img{height:120px}
+.cover-fig{margin-top:34px;display:grid;grid-template-columns:1fr 1fr;gap:16px;position:relative;z-index:2}
+.cover-fig figure{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.22)}
+.cover-fig figcaption{color:#C9D8EE}
+.src-list{font-size:12.5px;color:var(--gray);line-height:1.9}
+.src-list li{margin-bottom:2px}
+@media (max-width:768px){
+  .fig-row,.fig-row.three{grid-template-columns:1fr}
+  .gallery{grid-template-columns:repeat(2,1fr)}
+  .cover-fig{grid-template-columns:1fr}
+  figure img{height:190px}
+}
+</style>
+</head>
+<body>
+
+<!-- ================= 侧边导航 ================= -->
+<aside class="sidebar" id="sidebar">
+  <div class="brand">AI+空天防务产业园<small>省级可复制落地方案 · 2026年10月</small></div>
+  <nav>
+    <a href="#cover"><span class="n">封面</span>报告扉页</a>
+    <a href="#ch1"><span class="n">01</span>执行摘要</a>
+    <a href="#ch2"><span class="n">02</span>总体方案与战略定位</a>
+    <a href="#ch3"><span class="n">03</span>政策依据与战略窗口</a>
+    <a href="#ch4"><span class="n">04</span>市场分析</a>
+    <a href="#ch5"><span class="n">05</span>需求侧实证：招标采购盘点</a>
+    <a href="#ch6"><span class="n">06</span>技术路线与AI赋能</a>
+    <a href="#ch7"><span class="n">07</span>园区总体规划（三档标准化）</a>
+    <a href="#ch8"><span class="n">08</span>产业链招商图谱</a>
+    <a href="#ch9"><span class="n">09</span>商业模式与财务测算</a>
+    <a href="#ch10"><span class="n">10</span>全国复制推广：四大区域×一省一策</a>
+    <a href="#ch11"><span class="n">11</span>落地实施路线图与保障</a>
+    <a href="#ch12"><span class="n">12</span>风险合规与社会效益</a>
+    <a href="#chmedia"><span class="n">13</span>多媒体·影像资料</a>
+    <a href="#appendix"><span class="n">附</span>资料来源与说明</a>
+  </nav>
+</aside>
+
+<div class="main">
+<!-- ================= 封面 ================= -->
+<header class="cover" id="cover">
+  <div class="wrap">
+    <div class="kicker">INTELLIGENT &amp; AEROSPACE DEFENSE INDUSTRIAL PARK</div>
+    <h1>AI+空天防务产业园项目<br>商业计划书</h1>
+    <div class="subtitle">省级可复制落地方案 · 全国标准化产业社区产品</div>
+    <div class="meta">
+      <div>编制单位<b>项目筹备组（拟）</b></div>
+      <div>编制时间<b>2026年10月</b></div>
+      <div>文件性质<b>内部汇报资料</b></div>
+      <div>基准日期<b>2026年10月22日</b></div>
+    </div>
+    <div class="seal">内部资料 · 注意保存 · 仅供党政机关内部汇报使用</div>
+    <div class="cover-fig">
+      <figure><img src="images/lecpark_01.jpg" alt="低空经济产业园区航拍" loading="lazy"><figcaption>低空经济产业园区航拍参照（重庆梁平无人机制造产业园一期）｜来源：凤凰网重庆</figcaption></figure>
+      <figure><img src="images/evtol_01.jpg" alt="载人 eVTOL 飞行器" loading="lazy"><figcaption>载人 eVTOL 产品参照（亿航 EH216-S 无人驾驶载人航空器）｜来源：科创中国</figcaption></figure>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+
+<div class="compliance" id="compliance">
+  <b>合规声明：</b>本计划书全部内容基于公开政策法规、公开统计公报、公开招标采购公告与公开行业研究资料编制，仅用于产业经济分析与园区招商引资论证。全文统一采用"低空安防 / 要地防护 / 民用与公共安全装备 / 低空运行监管服务"表述；<b>不涉及武器制造工艺、军队部署与作战使用</b>；定向能（激光、微波）仅作为技术谱系列示，园区民用产品不涉及；军贸内容仅引用公开报道。文中媒体测算与机构预测数据均已标注"测算/预测口径"，不构成任何涉密信息披露。
+</div>
+
+<!-- ================= 目录 ================= -->
+<section class="chapter" id="toc">
+  <h2><span class="num">目录</span>报告结构</h2>
+  <p class="chapter-lead">本报告共十三章，另附资料来源、财务假设与免责说明；图表数据均取自项目财务测算结果（04 号文件）与公开证据库。</p>
+  <div class="toc-list">
+    <a href="#ch1">第一章　执行摘要</a>
+    <a href="#ch2">第二章　项目总体方案与战略定位</a>
+    <a href="#ch3">第三章　政策依据与战略窗口</a>
+    <a href="#ch4">第四章　市场分析</a>
+    <a href="#ch5">第五章　需求侧实证：党政机关招标采购盘点</a>
+    <a href="#ch6">第六章　技术路线与 AI 赋能</a>
+    <a href="#ch7">第七章　园区总体规划（三档标准化）</a>
+    <a href="#ch8">第八章　产业链招商图谱（三赛道×三层级）</a>
+    <a href="#ch9">第九章　商业模式与财务测算</a>
+    <a href="#ch10">第十章　全国复制推广：四大区域×一省一策</a>
+    <a href="#ch11">第十一章　落地实施路线图与保障</a>
+    <a href="#ch12">第十二章　风险合规与社会效益</a>
+    <a href="#chmedia">第十三章　多媒体·影像资料（宣传片与影像画廊）</a>
+    <a href="#appendix">附录　资料来源、财务假设与术语说明</a>
+  </div>
+</section>
+
+<!-- ================= 第一章 执行摘要 ================= -->
+<section class="chapter" id="ch1">
+  <h2><span class="num">01</span>执行摘要</h2>
+  <p class="chapter-lead">核心判断、关键指标、三档产品速览与总体结论。</p>
+
+  <div class="fig-row"><figure><img src="images/djidock_02.jpg" alt="城市低空智能监测组网：长沙星城天眸低空智能监测网机巢部署" loading="lazy"><figcaption>城市低空智能监测组网：长沙星城天眸低空智能监测网机巢部署｜来源：长沙星城天眸公开报道</figcaption></figure><figure><img src="images/tangshan_01.jpg" alt="智慧港口与低空应用场景：唐山港京唐港区集装箱码头无人机航拍" loading="lazy"><figcaption>智慧港口与低空应用场景：唐山港京唐港区集装箱码头无人机航拍｜来源：人民网图片</figcaption></figure></div>
+
+  <h3>1.1 项目核心判断</h3>
+  <p>本项目以<strong>空域与试飞中试为底座</strong>、以<strong>低空安防（要地防护）为特色</strong>、以<strong>"人工智能+低空智联网（AI+UTM）"为护城河</strong>，集聚"低空安防装备＋有人机/通航与 eVTOL 整机＋空天信息"三大产业，形成可在全国各省标准化复制的现代化空天防务产业社区。项目同时服务国家安全（低空安全治理体系现代化）、契合新质生产力与"人工智能+"国家战略、承接低空经济万亿级产业增量，具备"政府引导基金让利优先＋专业运营商品牌招商＋央企/链主订单锚点"的三层混合开发模式。</p>
+  <p>需求侧已经形成公开、持续、可核验的采购实证：2024—2026 年党政机关与重点目标单位公开成交的低空安防装备与系统项目以"小额高频"为特征，城市级飞行服务平台与管控平台单体可达数千万元至数亿元，为园区平台收入与招商订单提供了现实锚点。</p>
+
+  <h3>1.2 八项关键指标（三档标准化产品对比）</h3>
+  <div class="grid g4">
+    <div class="card"><h5>平台公司静态总投资</h5><div class="v">5 / 20 / 60<small>亿元</small></div><div class="note">起步园 A / 标准园 B / 旗舰园 C</div></div>
+    <div class="card"><h5>撬动入园企业累计固投</h5><div class="v">18 / 75 / 240<small>亿元</small></div><div class="note">园区平台带动比约 1:3.6—1:4</div></div>
+    <div class="card"><h5>全投资税后 IRR</h5><div class="v">6.29 / 7.11 / 13.82<small>%</small></div><div class="note">基准折现率 8%，见第九章</div></div>
+    <div class="card"><h5>资本金税后 IRR</h5><div class="v">17.93 / 20.75 / 43.19<small>%</small></div><div class="note">受 65% 债务杠杆放大，仅作辅助参考</div></div>
+    <div class="card"><h5>静态投资回收期</h5><div class="v">8.25 / 8.05 / 6.76<small>年</small></div><div class="note">A、B 动态回收期计算期内未回收；C 档动态回收 8.13 年</div></div>
+    <div class="card"><h5>十年累计全口径税收</h5><div class="v">10.44 / 41.76 / 146.16<small>亿元</small></div><div class="note">含入园企业全口径税收；地方留成 3.97 / 15.87 / 55.54 亿元</div></div>
+    <div class="card"><h5>达产直接就业</h5><div class="v">3,372 / 11,200 / 36,260<small>人</small></div><div class="note">上下游带动 8,430 / 28,000 / 90,650 人（1:2.5）</div></div>
+    <div class="card"><h5>达产亩均税收目标</h5><div class="v">≥50 / ≥60 / ≥70<small>万元/亩</small></div><div class="note">与招商履约考核挂钩的对赌指标</div></div>
+  </div>
+
+  <h3>1.3 三档产品速览</h3>
+  <div class="table-scroll">
+<table style="min-width:640px">
+    <colgroup><col style="width:18%"><col style="width:27%"><col style="width:27%"><col style="width:32%"></colgroup>
+    <thead><tr><th style="width:18%">维度</th><th style="width:27%">起步园 A（300 亩 / 5 亿）</th><th style="width:27%">标准园 B（1,000 亩 / 20 亿）</th><th style="width:32%">旗舰园 C（3,000 亩 / 60 亿）</th></tr></thead>
+    <tbody>
+      <tr><td style="width:18%">适用场景</td><td style="width:27%">县域 / 临空小点 / 老工业区改造起步区</td><td style="width:27%">地级市 / 省会临空经济区核心园</td><td style="width:32%">省会 / 国家枢纽城市、国家级经开区</td></tr>
+      <tr><td style="width:18%">载体建筑面积</td><td style="width:27%">24 万㎡（容积率 1.2）</td><td style="width:27%">80 万㎡（容积率 1.2）</td><td style="width:32%">260 万㎡（容积率 1.3）</td></tr>
+      <tr><td style="width:18%">建设到投产</td><td style="width:27%">12—18 个月起步</td><td style="width:27%">24—30 个月</td><td style="width:32%">30—36 个月</td></tr>
+      <tr><td style="width:18%">全投资 NPV（8%）</td><td style="width:27%">−2,723.7 万元</td><td style="width:27%">−5,611.7 万元</td><td style="width:32%">+109,136.9 万元</td></tr>
+      <tr><td style="width:18%">十年代码：税收 / 就业</td><td style="width:27%">10.44 亿元 / 直接 3,372 人</td><td style="width:27%">41.76 亿元 / 直接 11,200 人</td><td style="width:32%">146.16 亿元 / 直接 36,260 人</td></tr>
+    </tbody>
+  
+  </table>
+</div>
+
+  <h3>1.4 总体结论（如实表述，不作美化）</h3>
+  <div class="note-box">
+    <ul>
+      <li><strong>社会属性显著、平台属性偏公益：</strong>A、B 两档平台公司承担公共基础设施与平台服务职能，全投资 NPV 在 8% 折现率下为负，符合县域与标准档公共基础设施平台的公益属性；两档资本金 IRR 为正（17.93%、20.75%），资本金层面具备投资吸引力。旗舰园 C 规模效应下全投资 IRR 13.82%、NPV 为正，财务可行性最强。</li>
+      <li><strong>社会效益是主要回报：</strong>三档十年累计地方留成税收 3.97 / 15.87 / 55.54 亿元，达产直接就业合计最高 3.63 万人、带动就业 9.07 万人，并形成产业集聚、技术溢出与区域协调效应。</li>
+      <li><strong>第一敏感因素为返税比例：</strong>敏感性分析显示，全投资 IRR 受"返税比例""投资额""达产速度"影响最大；税收返还须与招商履约考核挂钩，本项目不做税收减免承诺，具体基线在招商协议与可研阶段核定。</li>
+      <li><strong>可复制内核清晰：</strong>"一总部＋多基地＋边防场景验证"网络与三档标准化产品，使各省可按经济规模、空域条件与产业基础择档落地，再向第二省轻资产输出"品牌＋运营＋基金"。</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ================= 第二章 ================= -->
+<section class="chapter" id="ch2">
+  <h2><span class="num">02</span>项目总体方案与战略定位</h2>
+  <p class="chapter-lead">定位表述、产业架构、标准化可复制模式与三档产品总览。</p>
+
+  <div class="fig-row"><figure><img src="images/evtol_03.jpg" alt="载人 eVTOL 编队展示：亿航 EH216-S 合肥停机坪编队公开报道" loading="lazy"><figcaption>载人 eVTOL 编队展示：亿航 EH216-S 合肥停机坪编队公开报道｜来源：合肥日报 / 新浪财经</figcaption></figure><figure><img src="images/gaairport_02.jpg" alt="通用航空基础设施参照：河北沧州中捷产业园区通用机场停机坪" loading="lazy"><figcaption>通用航空基础设施参照：河北沧州中捷产业园区通用机场停机坪｜来源：凤凰网河北</figcaption></figure></div>
+
+  <h3>2.1 项目定位（统一表述）</h3>
+  <p><strong>项目名称：</strong>AI+空天防务产业园（全国可复制标准化产品）。</p>
+  <p><strong>一句话定位：</strong>以空域与试飞中试为底座、以低空安防（要地防护）为特色、以"人工智能+低空智联网（AI+UTM）"为护城河，集聚"低空安防装备＋有人机/通航与 eVTOL 整机＋空天信息"三大产业，可在全国各省标准化复制的现代化空天防务产业社区。</p>
+  <p><strong>三个结合点：</strong></p>
+  <div class="grid g3">
+    <div class="card"><h5>服务国家安全</h5><p style="font-size:13.5px;margin:6px 0 0">完善低空安全治理体系与机场、能源、监所、边检等重点目标防护能力，属于公共安全装备与运行监管服务范畴。</p></div>
+    <div class="card"><h5>契合新质生产力</h5><p style="font-size:13.5px;margin:6px 0 0">对接"人工智能+"行动、通用航空装备创新应用与商业航天、卫星互联网等新兴产业方向。</p></div>
+    <div class="card"><h5>承接产业增量</h5><p style="font-size:13.5px;margin:6px 0 0">承接低空经济万亿级市场增量，形成装备制造、平台运营、检测认证、数据服务协同的产业生态。</p></div>
+  </div>
+
+  <h3>2.2 产业架构：一底座、三特色、五方向</h3>
+  <div class="table-scroll">
+<table style="min-width:560px">
+    <colgroup><col style="width:16%"><col style="width:34%"><col style="width:50%"></colgroup>
+    <thead><tr><th style="width:16%">层级</th><th style="width:34%">构成</th><th style="width:50%">内涵</th></tr></thead>
+    <tbody>
+      <tr><td style="width:16%">底座</td><td style="width:34%">空域与试飞中试底座</td><td style="width:50%">试飞场地与空域批复先行、标准厂房与总装厂房、测控指挥与电磁环境试验区、检测认证中心，为三大产业提供公共中试与验证条件。</td></tr>
+      <tr><td style="width:16%">特色一</td><td style="width:34%">低空安防（要地防护）装备集聚</td><td style="width:50%">面向公安、机场、能源核设施、监所、边检、重大活动等公共安全场景的民用与公共安全装备，以及城市级"以租代购"运营服务。</td></tr>
+      <tr><td style="width:16%">特色二</td><td style="width:34%">AI+UTM 低空智联网护城河</td><td style="width:50%">对接国家 UOM 与省市监管平台，提供通导监一体基础设施、数字孪生平台、AI 识别与多传感器融合能力，形成平台与数据层壁垒。</td></tr>
+      <tr><td style="width:16%">特色三</td><td style="width:34%">三大产业协同集聚</td><td style="width:50%">低空安防装备、有人机/通航与 eVTOL 整机、空天信息（卫星互联网/北斗/遥感/商业航天）在同一园区内配套协作。</td></tr>
+      <tr><td style="width:16%">方向一</td><td style="width:34%">检测认证</td><td style="width:50%">联合权威机构建设低空安防装备与通航/eVTOL 部件检测认证中心，形成中立化质量背书。</td></tr>
+      <tr><td style="width:16%">方向二</td><td style="width:34%">试飞中试与共享制造</td><td style="width:50%">复材、结构件、总装共享厂房与试飞场地，降低中小企业中试门槛。</td></tr>
+      <tr><td style="width:16%">方向三</td><td style="width:34%">平台运营</td><td style="width:50%">飞服平台运维、城市级低空安防运营、算力服务与数据要素运营。</td></tr>
+      <tr><td style="width:16%">方向四</td><td style="width:34%">数据要素</td><td style="width:50%">航迹、遥感、北斗时空数据分级分类、本地化存储与合规运营。</td></tr>
+      <tr><td style="width:16%">方向五</td><td style="width:34%">场景服务</td><td style="width:50%">面向政法、公安、机场、能源、应急等开放"以试代购"场景与场景券。</td></tr>
+    </tbody>
+  
+  </table>
+</div>
+
+  <h3>2.3 标准化可复制模式</h3>
+  <p><strong>网络结构：</strong>"一总部＋多基地＋边防场景验证"网络——总部承担品牌、标准、基金与招商中枢；多基地按三档产品在各省落地；边疆沿边口岸与高寒/高原试验场承担场景验证与差异化功能。</p>
+  <p><strong>开发模式（三层混合）：</strong></p>
+  <ol>
+    <li><strong>政府引导基金（让利优先）：</strong>财政资金、地方政府专项债与省级引导基金优先承担公共平台与基础设施投入，基金让利条款前置约定；</li>
+    <li><strong>专业运营商（品牌招商）：</strong>输出园区品牌、招商体系与运营服务，绑定管理协议与业绩对赌；</li>
+    <li><strong>央企/链主（订单锚点）：</strong>引入中国电科、中国电子/电信、航空工业、航天科技科工体系内企业与链主龙头，以场景、订单与供应链对接带动中小企业集聚。</li>
+  </ol>
+  <div class="note-box">三档产品在用地规模、载体面积、投资强度与达产指标上全部标准化，配套"一省一策参数表"（见第十章），使各省可在同一产品内核下按资源禀赋调整选址、产业侧重与资金组合，保证品牌、标准、服务手册与平台系统的一致性。</div>
+</section>
+
+<!-- ================= 第三章 政策依据与战略窗口 ================= -->
+<section class="chapter" id="ch3">
+  <h2><span class="num">03</span>政策依据与战略窗口</h2>
+  <p class="chapter-lead">政策闭环时间线、法律责任链、依法治理需求与专项资金通道。政策核名核期核文号，引用以公开原文为准。</p>
+
+  <div class="fig-row"><figure><img src="images/xiongan_01.jpg" alt="政策创新与产业承载样板：雄安新区雄安站航拍" loading="lazy"><figcaption>政策创新与产业承载样板：雄安新区雄安站航拍｜来源：视觉中国</figcaption></figure><figure><img src="images/chongli_02.jpg" alt="大型活动低空安防场景参照：崇礼冬奥核心区雪如意俯瞰" loading="lazy"><figcaption>大型活动低空安防场景参照：崇礼冬奥核心区雪如意俯瞰｜来源：视觉中国</figcaption></figure></div>
+
+  <h3>3.1 政策闭环时间线（2023—2026）</h3>
+  <p>低空经济自 2023 年中央经济工作会议首提后，连续 2024、2025、2026 三年写入《政府工作报告》；法规、机构、标准、统计分类与平台规范在 2024—2026 年密集落地，形成"顶层政策—行政法规—部门规章—技术标准—统计口径"的完整闭环。</p>
+  <div class="timeline">
+    <div class="tl-item"><div class="date">2023 年 12 月</div><div class="body">中央经济工作会议首提低空经济；2024、2025、2026 年连续三年写入《政府工作报告》。</div></div>
+    <div class="tl-item"><div class="date">2024 年 1 月 1 日</div><div class="body">国务院、中央军委令第 761 号《无人驾驶航空器飞行管理暂行条例》施行；第四十三条明确反制设备三类授权主体，第三十四条禁止拍摄涉密设施。</div></div>
+    <div class="tl-item"><div class="date">2024 年 3 月</div><div class="body">四部门联合印发《通用航空装备创新应用实施方案（2024—2030 年）》。</div></div>
+    <div class="tl-item"><div class="date">2024 年 12 月</div><div class="body">国家发展改革委设立低空经济发展司，统筹协调低空经济发展。</div></div>
+    <div class="tl-item"><div class="date">2025 年 8 月</div><div class="body">国务院印发《关于深入实施"人工智能+"行动的意见》（国发〔2025〕11 号）。</div></div>
+    <div class="tl-item"><div class="date">2025 年 10 月</div><div class="body">二十届四中全会通过"十五五"规划建议，航空航天、低空经济列为重点方向。</div></div>
+    <div class="tl-item"><div class="date">2025 年 11 月</div><div class="body">中央空管办发布《国家级和省、市级低空飞行综合监管服务平台功能要求（1.0 版）》。</div></div>
+    <div class="tl-item"><div class="date">2025 年 12 月</div><div class="body">《低空经济及其核心产业统计分类（试行）》（发改低空〔2025〕1676 号）印发，统计口径落地。</div></div>
+    <div class="tl-item"><div class="date">2026 年 1 月 1 日</div><div class="body">新修订《治安管理处罚法》（主席令第四十九号）施行，第四十六条对"黑飞"等行为设定法律责任；2026 年 9 月 28 日公安部发布裁量基准。</div></div>
+    <div class="tl-item"><div class="date">2026 年 5 月</div><div class="body">民航局低空安全司获批设立（编制 30 名），行业监管机构进一步健全。</div></div>
+    <div class="tl-item"><div class="date">2026 年 7 月 1 日</div><div class="body">新修订《民用航空法》（主席令第六十五号）施行，低空经济入法、300 米以下空域实行分类分级管理；同日 CCAR-290-R4（交通运输部令 2026 年第 14 号）施行。</div></div>
+    <div class="tl-item"><div class="date">2026 年 10 月 9 日</div><div class="body">中共中央、国务院印发《关于发展新质生产力的意见》，为航空航天、低空经济等新兴产业提供顶层依据。</div></div>
+  </div>
+
+  <h3>3.2 法律责任链与依法治理需求</h3>
+  <div class="table-scroll">
+<table style="min-width:560px">
+    <colgroup><col style="width:24%"><col style="width:40%"><col style="width:36%"></colgroup>
+    <thead><tr><th style="width:24%">层级</th><th style="width:40%">依据（公开法规原文口径）</th><th style="width:36%">对园区业务的约束与支撑</th></tr></thead>
+    <tbody>
+      <tr><td style="width:24%">重点目标防护制度</td><td style="width:40%">《反恐怖主义法》第三十一条重点目标安全防护制度；国令第 761 号第四十三条明确反制设备三类授权主体</td><td style="width:36%">机场、能源、核设施、监狱、大型活动等重点目标依法配置低空安防能力，需求具备法定依据</td></tr>
+      <tr><td style="width:24%">飞行活动管理</td><td style="width:40%">国令第 761 号：飞行活动申请、实名登记、禁飞与限飞、第三十四条禁拍涉密设施</td><td style="width:36%">园区试飞、测试活动须履行空域与飞行申请；园区产品面向合规民用与公共安全场景</td></tr>
+      <tr><td style="width:24%">治安责任</td><td style="width:40%">新《治安管理处罚法》第四十六条：违规飞行可处 5—10 日拘留；非法穿越国边境的处 10—15 日拘留</td><td style="width:36%">"黑飞"治理刚性增强，公安管控平台与要地防护装备需求持续释放</td></tr>
+      <tr><td style="width:24%">行业标准</td><td style="width:40%">GB 42590-2023（2024-06-01 实施）；GB 46750、GB 46761-2025（2026-05-01 实施）；GB 46860-2025（2027-01-01 实施）</td><td style="width:36%">检测认证中心可对标国标开展第三方检测，形成标准卡位</td></tr>
+      <tr><td style="width:24%">出口与两用物项</td><td style="width:40%">商务部、海关总署、中央军委装备发展部 2026 年第 49 号公告</td><td style="width:36%">园区涉两用物项业务须建立内控合规流程，配备"一站式"合规辅导</td></tr>
+    </tbody>
+  
+  </table>
+</div>
+  <div class="warn-box">
+    <b>口径勘误说明：</b>经公开渠道核查，"低空经济常态化运营管理办法（2026-05-28）"查无此文，本报告不予引用；公开渠道亦不存在列明"16 类重点行业强制配置反制设备"的法规或标准文号，本报告不使用"国家强制 16 类"表述。相关需求统一表述为：依据《反恐怖主义法》第三十一条重点目标安全防护制度与国令第 761 号第四十三条，机场、能源、核设施、监狱、大型活动等重点目标依法配置低空安防能力。
+  </div>
+
+  <h3>3.3 专项资金与金融工具通道</h3>
+  <p>园区重资产投入可组合使用财政补助、地方政府专项债、政策性银行贷款、产业基金与 REITs 退出工具，形成"建设期政府资金引导—运营期基金参与—成熟期 REITs 退出"的闭环。</p>
+  <div class="grid g3">
+    <div class="card"><h5>地方政府专项债</h5><p style="font-size:13.5px">国办 2024 年 12 月专项债管理机制意见将低空经济等新兴产业基础设施纳入作项目资本金正面清单，资本金比例上限由 25% 提高至 30%；园区、通用机场、飞行服务站、航线管控系统均可申报。</p><div class="note">案例：自贡 4.94 亿元；济南评测中心 2025 年 4,000 万元（10 年期、利率 1.99%）、2026 年再安排 2,800 万元；花都一期 2.1275 亿元；汤阴储备航空类项目 14 个、总投资 60.8 亿元。</div></div>
+    <div class="card"><h5>中央预算内与特别国债</h5><p style="font-size:13.5px">"两重"建设提前批约 2,950 亿元中包含低空方向；超长期特别国债、中央预算内投资可支持公共平台、检测认证与试飞中试设施。</p><div class="note">2026 年安排：超长期特别国债 1.3 万亿元、地方政府专项债 4.4 万亿元、中央预算内投资 7,550 亿元，方向聚焦人工智能、低空经济、生物制造等未来产业。</div></div>
+    <div class="card"><h5>产业基金三层结构</h5><p style="font-size:13.5px">省级母基金＋垂直子基金＋AIC（产业投资公司）；地方参照：重庆 20 亿元空天低空基金、四川 30 亿元专项基金、湖南"30+10+5+5 亿元"基金矩阵、成都 8 只基金目标超百亿元、合肥 200 亿元引导母基金加 100 亿元未来产业基金。</p><div class="note">区县参照：花都认缴 4.5 亿元、首期 1 亿元；南宁 10 亿元创新生产力基金。</div></div>
+  </div>
+  <p><strong>退出通道：</strong>中金联东民营产业园首单 REIT（代码 508003，2024 年 11 月上市，3 个园区、建筑面积 19.84 万㎡）与易方达广开 REIT 已验证产业园资产证券化路径；无锡梁溪发行全国首单未来产业科创债 5 亿元，投向商业航天、低空与 AI 方向。园区自第 5 年起开展 Pre-REITs 资产包培育。</p>
+</section>
+
+<!-- ================= 第四章 市场分析 ================= -->
+<section class="chapter" id="ch4">
+  <h2><span class="num">04</span>市场分析</h2>
+  <p class="chapter-lead">全球及中国低空安防市场（多口径并列）、低空经济、通航与 eVTOL、空天信息四个板块。媒体测算与机构预测均标注口径，三板块规模口径交叉、不相加。</p>
+
+  <div class="fig-row three"><figure><img src="images/swarm_01.jpg" alt="低空经济城市级场景：上海徐汇滨江 500 架无人机编队灯光秀" loading="lazy"><figcaption>低空经济城市级场景：上海徐汇滨江 500 架无人机编队灯光秀｜来源：澎湃新闻</figcaption></figure><figure><img src="images/evtol_02.jpg" alt="载人 eVTOL 商业化飞行：亿航 EH216-S 高海拔载人飞行公开报道" loading="lazy"><figcaption>载人 eVTOL 商业化飞行：亿航 EH216-S 高海拔载人飞行公开报道｜来源：太平洋科技</figcaption></figure><figure><img src="images/rocket_03.jpg" alt="空天信息商业航天板块：朱雀二号改进型遥七一箭十星点火发射" loading="lazy"><figcaption>空天信息商业航天板块：朱雀二号改进型遥七一箭十星点火发射｜来源：凤凰网</figcaption></figure></div>
+
+  <h3>4.1 全球低空安防（反无人机）市场：多口径并列</h3>
+  <p>不同机构因统计边界不同，2025 年全球市场规模区间差异显著：窄口径（系统设备硬件）约 31 亿—45 亿美元，宽口径（含军事集成、平台与服务）约 51 亿—74 亿美元；机构预测年复合增长率区间为 19.8%—27.9%。北美为最大存量市场，份额约三至五成（随口径不同）；亚太为增速最快区域（MarketsandMarkets 口径 CAGR 30.0%）。</p>
+  <div class="chart-box">
+    <div class="cap">图 4-1　全球反无人机市场 2025 年规模：各机构口径对比（亿美元）</div>
+    <div id="chart-global" class="chart"></div>
+    <div class="src">数据来源：Grand View Research、Fortune Business Insights、MarketsandMarkets、MarkNtel Advisors、Straits Research 公开研究摘要（2025 年基准）；机构测算，口径见 4.1 节。</div>
+  </div>
+  <div class="note-box">
+    <strong>微观参照（公开披露口径）：</strong>澳大利亚 DroneShield FY2025 收入 <strong>A$216.5 百万（澳元，同比 +276%）</strong>；其 US$1.2 十亿为销售线索（pipeline）规模，并非在手订单，已签约欧洲最大单为 US$49.6 百万。Anduril 2025 年收入约 US$2.2 十亿、估值约 US$61 十亿（媒体测算口径）。上述企业以国际军工与国防市场为主，仅作赛道景气参照，园区民用产品定位不与其对标。
+  </div>
+
+  <h3>4.2 中国民用与公共安全低空安防市场</h3>
+  <p>国内市场同样存在窄、宽口径分歧：MarketsandMarkets 系统设备窄口径 2025 年 US$591.6 百万（约 42.5 亿元人民币，按 7.18 汇率测算），2030 年 US$1,401.0 百万（约 100.6 亿元），CAGR 18.8%；行业宽口径序列 2024 年约 30 亿元、2025 年约 85 亿元、2026 年约 150 亿元——其中 150 亿元为宽口径测算上限（36 氪转载"低空 Future"研究院测算式：存量 350 万架×渗透率 15%×设备均价 3 万元≈157.5 亿元），仅作上限参考。</p>
+  <div class="chart-box">
+    <div class="cap">图 4-2　中国低空安防市场规模区间（2024—2030，亿元人民币；区间为宽窄口径并列，2030 年为窄口径点值）</div>
+    <div id="chart-china" class="chart"></div>
+    <div class="src">数据来源：MarketsandMarkets《China Counter-UAS Systems Market》窄口径；36 氪转载"低空 Future"研究院宽口径序列；汇率按 7.18 测算，2026 年 150 亿元为宽口径测算上限。</div>
+  </div>
+
+  <h3>4.3 低空经济：基数与预测</h3>
+  <p>2023 年我国低空经济实际测算规模 5,059.5 亿元（赛迪研究院口径，同比 +33.8%）；民航局预测口径下，2025 年约 1.5 万亿元、2030 年有望达 2 万亿元、2035 年突破 3.5 万亿元，预测值不等于统计公报实际值。</p>
+  <div class="chart-row">
+    <div class="chart-box">
+      <div class="cap">图 4-3　低空经济规模：2023 年实际值与民航局预测值（亿元）</div>
+      <div id="chart-lowalt" class="chart"></div>
+      <div class="src">数据来源：2023 年值为赛迪研究院测算；2025/2030/2035 为民航局预测口径（新华社、国新办发布会公开报道）。</div>
+    </div>
+    <div class="chart-box">
+      <div class="cap">图 4-4　空天信息三板块规模（2025 年，亿元；口径交叉，不相加）</div>
+      <div id="chart-space" class="chart"></div>
+      <div class="src">数据来源：中国卫星导航定位协会白皮书；赛迪研究院；地理信息产业协会公开资料；各板块统计边界不同，禁止相加。</div>
+    </div>
+  </div>
+
+  <h3>4.4 运行基数（2025 年民航行业发展统计公报口径）</h3>
+  <div class="table-scroll">
+<table style="min-width:560px">
+    <colgroup><col style="width:34%"><col style="width:38%"><col style="width:32%"></colgroup>
+    <thead><tr><th style="width:34%">指标</th><th style="width:38%">数值（2025 年底）</th><th style="width:32%">同比 / 备注</th></tr></thead>
+    <tbody>
+      <tr><td style="width:34%">注册民用无人机</td><td style="width:38%">328.7 万架（其中大中型 42.3 万架）</td><td style="width:32%">+51.0%</td></tr>
+      <tr><td style="width:34%">无人机注册用户</td><td style="width:38%">237.8 万个</td><td style="width:32%">同比增加 75.9 万个</td></tr>
+      <tr><td style="width:34%">无人机飞行小时</td><td style="width:38%">4,530.29 万小时</td><td style="width:32%">+69.89%</td></tr>
+      <tr><td style="width:34%">传统通用航空飞行小时</td><td style="width:38%">121.9 万小时</td><td style="width:32%">−9.1%</td></tr>
+      <tr><td style="width:34%">在册通用航空器</td><td style="width:38%">3,140 架</td><td style="width:32%">—</td></tr>
+      <tr><td style="width:34%">通用机场 / 运输机场</td><td style="width:38%">513 个（A 类 173 个）/ 270 个</td><td style="width:32%">通用机场净增 38 个</td></tr>
+      <tr><td style="width:34%">低空飞行服务站</td><td style="width:38%">46 个，覆盖 23 个省（区、市）</td><td style="width:32%">—</td></tr>
+      <tr><td style="width:34%">操控员执照</td><td style="width:38%">41.55 万本</td><td style="width:32%">+68.0%</td></tr>
+    </tbody>
+  
+  </table>
+</div>
+  <p>民航"十五五"目标：无人机实名登记率 100%、操控员执照超 100 万本、年飞行总量超 8,000 万小时。地方参照：广东省目标 2026 年低空经济规模超 3,000 亿元；芜湖航空产业基地 2025 年产值 350 亿元（同比 +32.6%）。</p>
+
+  <h3>4.5 通航与 eVTOL：取证梯队</h3>
+  <ul>
+    <li><strong>亿航智能 EH216-S：</strong>全球首个四证齐备载人 eVTOL，2025 年 3 月取得 OC（生产许可证），已在合肥开展商业试运营。</li>
+    <li><strong>峰飞航空 V2000CG：</strong>全球首个吨级 eVTOL 型号合格证（TC），2025 年 7 月首架交付。</li>
+    <li><strong>沃飞长空 AE200（吉利系）：</strong><strong>截至 2026 年 10 月尚未取得 TC</strong>，四川证监局辅导备案、拟科创板上市；报告不按"已取证"表述。</li>
+    <li><strong>小鹏汇天陆地航母：</strong>广州工厂规划年产 1 万台；订单口径约 5,000—7,000 台，具体以公司公告时点为准。</li>
+    <li><strong>梯队配套：</strong>沃兰特 VE25（2026 年完成 3 亿美元 C 轮）、御风未来 M1、时的科技 E20（芜湖年产 200 架规划）；动力与材料配套见第八章招商图谱。</li>
+  </ul>
+
+  <h3>4.6 空天信息三板块（口径独立、禁止相加）</h3>
+  <ul>
+    <li><strong>北斗时空产业 13,323 亿元（2025 年）：</strong>其中导航服务 6,290 亿元（+9.24%）、融合应用 7,033 亿元（中国卫星导航定位协会白皮书）。</li>
+    <li><strong>商业航天核心产业 1.01 万亿元（2025 年，赛迪口径）：</strong>商业发射 50 次、占比 54%；入轨商业卫星 311 颗、占比 84%。广义市场 2.83 万亿元为媒体转引口径，边界不同，不与核心口径并列计算。</li>
+    <li><strong>地理信息产业 9,005 亿元（2025 年，+5.9%）：</strong>民用遥感卫星在轨 670 颗；商业遥感数据服务 2025 年超 200 亿元、2030 年约 600 亿元（机构测算口径）。</li>
+    <li><strong>星座进度（公开口径）：</strong>千帆星座在轨 256 颗（工信部 2026-09-16 工作动态）；垣信约 70 亿元 B 轮、估值约 500 亿元（媒体口径）；GW 星网 ITU 申报 12,992 颗。</li>
+  </ul>
+</section>
+
+<!-- ================= 第五章 需求侧实证 ================= -->
+<section class="chapter" id="ch5">
+  <h2><span class="num">05</span>需求侧实证：党政机关招标采购盘点</h2>
+  <p class="chapter-lead">79 个案例库、54 个有效成交样本的统计结果，七大行业结构、价格带与两条采购线。采购实证用于校准招商测算，<strong>不按大单假设装备收入</strong>。</p>
+
+  <div class="fig-row three"><figure><img src="images/cuas_03.jpg" alt="低空安防侦测干扰一体化设备（民用公共安全装备口径）" loading="lazy"><figcaption>低空安防侦测干扰一体化设备（民用公共安全装备口径）｜来源：厂商公开产品资料</figcaption></figure><figure><img src="images/secctr_01.jpg" alt="城市智能安防指挥中心运行场景参照" loading="lazy"><figcaption>城市智能安防指挥中心运行场景参照｜来源：公开行业资料</figcaption></figure><figure><img src="images/djidock_03.jpg" alt="能源行业低空监管案例：国网输电塔驻塔式无人机自动机场" loading="lazy"><figcaption>能源行业低空监管案例：国网输电塔驻塔式无人机自动机场｜来源：新浪财经</figcaption></figure></div>
+
+  <h3>5.1 有效成交样本总体特征</h3>
+  <p>2024—2026 年公开招标/成交案例库共 79 条；剔除候选人报价、招标中预算、废标终止、金额未公开、非反制辅助装备包与 2022/2023 年参考案例后，纳入金额统计的有效成交/预成交样本 54 条，合计 <strong>10,359.29 万元</strong>：最小 2.8789 万元（江苏龙潭监狱）；纯反制最大 668.32 万元（西安市公安局，西安交远，2025-10）；含组合包最大 1,959.72 万元（太原武宿机场，无锡雷华，驱鸟＋探鸟＋反制组合包）；<strong>中位数 118.15 万元、算术平均 191.84 万元</strong>，呈"小额高频"特征。</p>
+  <div class="chart-box">
+    <div class="cap">图 5-1　54 个有效成交样本金额区间分布（条数）</div>
+    <div id="chart-bins" class="chart"></div>
+    <div class="src">数据来源：中国政府采购网、各省公共资源交易平台、军队采购网公开公告整理（2024—2026）；详见附录来源清单。</div>
+  </div>
+
+  <h3>5.2 分行业采购结构</h3>
+  <div class="chart-row">
+    <div class="chart-box">
+      <div class="cap">图 5-2　分行业成交金额合计（万元，n=54）</div>
+      <div id="chart-ind-amt" class="chart"></div>
+      <div class="src">数据来源：02 号调研文件有效成交样本统计；军队条目仅引公开公告事实。</div>
+    </div>
+    <div class="chart-box">
+      <div class="cap">图 5-3　分行业成交条数（条，n=54）</div>
+      <div id="chart-ind-cnt" class="chart"></div>
+      <div class="src">数据来源：同上；条均金额见正文 5.2 表。</div>
+    </div>
+  </div>
+  <div class="table-scroll">
+<table style="min-width:640px">
+    <colgroup><col style="width:30%"><col style="width:14%"><col style="width:32%"><col style="width:32%"></colgroup>
+    <thead><tr><th style="width:30%">行业品类</th><th style="width:14%">条数</th><th style="width:32%">金额合计（万元）</th><th style="width:32%">条均金额（万元）</th></tr></thead>
+    <tbody>
+      <tr><td style="width:30%">公安（省/市/县三级）</td><td style="width:14%">20</td><td style="width:32%">3,920.27</td><td style="width:32%">196.01</td></tr>
+      <tr><td style="width:30%">机场（机场公安/飞行区）</td><td style="width:14%">6</td><td style="width:32%">2,808.22</td><td style="width:32%">468.04</td></tr>
+      <tr><td style="width:30%">重大活动安保与短期租赁</td><td style="width:14%">9</td><td style="width:32%">1,542.68</td><td style="width:32%">171.41</td></tr>
+      <tr><td style="width:30%">能源与核设施要地防护</td><td style="width:14%">6</td><td style="width:32%">740.69</td><td style="width:32%">123.45</td></tr>
+      <tr><td style="width:30%">监狱 / 看守所</td><td style="width:14%">4</td><td style="width:32%">576.76</td><td style="width:32%">144.19</td></tr>
+      <tr><td style="width:30%">边检 / 边境</td><td style="width:14%">3</td><td style="width:32%">532.79</td><td style="width:32%">177.60</td></tr>
+      <tr><td style="width:30%">军队采购公开公告</td><td style="width:14%">6</td><td style="width:32%">237.88</td><td style="width:32%">39.65</td></tr>
+    </tbody>
+  
+  </table>
+</div>
+  <p>观察要点：公安是第一需求方，市级项目多在 100—300 万元，省级机动平台可达 240—490 万元；机场场景分两类——机场公安/口岸便携或固定式几十至 250 万元，飞行区"驱鸟＋探鸟雷达＋反制"组合打包可达千万元级；监所呈省级打包趋势；能源要地覆盖核设施、油库、石化、电网、焦化、电厂；重大活动推动"租赁服务"模式；边检总站级项目可达 349.14 万元；军队公开公告均为小额标准化装备采购，仅作公开市场需求旁证，不涉及任何涉密参数。</p>
+
+  <h3>5.3 价格带阶梯（装备与服务）</h3>
+  <div class="chart-box">
+    <div class="cap">图 5-4　低空安防装备价格带区间（万元/套或整包；机场级为媒体测算口径）</div>
+    <div id="chart-price" class="chart"></div>
+    <div class="src">数据来源：公开中标公告成交价位整理；机场级 500—3,000 万元为 36 氪调研整理的媒体测算口径；城市级平台与租赁、SaaS 价格见 5.4、5.5 节文字。</div>
+  </div>
+
+  <h3>5.4 平台亿元级项目：另一条采购线</h3>
+  <p>与装备"小额高频"并行，城市级低空飞行服务平台与管控平台单体金额远超装备，是园区平台运营收入的对标参照：</p>
+  <div class="table-scroll">
+<table style="min-width:640px">
+    <colgroup><col style="width:20%"><col style="width:16%"><col style="width:40%"><col style="width:24%"></colgroup>
+    <thead><tr><th style="width:20%">项目</th><th style="width:16%">金额</th><th style="width:40%">内容与模式</th><th style="width:24%">中标/候选主体</th></tr></thead>
+    <tbody>
+      <tr><td style="width:20%">汉中市低空经济数字化基础设施及配套场景建设项目</td><td style="width:16%">2.95 亿元</td><td style="width:40%">通导监反一体化基础设施、飞服平台、数字孪生数据中台、政务巡检/文旅/应急/物流场景；工期 3 年；组建甲方控股独立法人项目公司，投资—建设—运维合伙人模式（类 PPP）</td><td style="width:24%">中科星图＋西安御澜林（联合体）</td></tr>
+      <tr><td style="width:20%">宿迁宿城区低空全域智慧运营体系设备采购及配套服务项目</td><td style="width:16%">1.4888 亿元</td><td style="width:40%">智联网基础设施、起降设施、低空智慧大脑一体化平台与应用场景；工期 24 个月</td><td style="width:24%">吉峰三农牵头＋南京莱斯＋江苏铁塔（联合体）</td></tr>
+      <tr><td style="width:20%">合肥市低空经济基础设施项目（一期）</td><td style="width:16%">1.4541 亿元</td><td style="width:40%">低空智联网、飞行服务平台、政务一网统飞三部分；2025 年 12 月成交（1.65 亿元为可研概算口径，不作中标价引用）</td><td style="width:24%">四创电子牵头联合体（安徽移动、中科星图数字地球合肥、中电信数智）</td></tr>
+      <tr><td style="width:20%">青岛市低空飞行管理服务中心与配套设施项目（一期）</td><td style="width:16%">1.118 亿元</td><td style="width:40%">飞行管理服务中心与配套基础设施（第一候选人公示口径）</td><td style="width:24%">通号青铁低空交通＋通号城市轨道交通</td></tr>
+      <tr><td style="width:20%">山东省低空智能网联系统平台开发项目</td><td style="width:16%">4,505 万元</td><td style="width:40%">省级低空智能网联系统平台开发</td><td style="width:24%">南京莱斯联合体（航天时代低空、齐鲁空天信息研究院、北斗伏羲）</td></tr>
+      <tr><td style="width:20%">县域平台起步样本</td><td style="width:16%">—</td><td style="width:40%">辉县一网统飞 1,503.19 万元；泸水城市空地一体化治理综合体 1,749.80 万元；德州全域智慧低空平台 1,358.80 万元</td><td style="width:24%">中国铁塔新乡分公司；政府购买服务；数字政通等</td></tr>
+    </tbody>
+  
+  </table>
+</div>
+  <p><strong>两条采购线：</strong>一是政府飞行服务平台线（省市县飞服平台、智联网基础设施与运营服务购买）；二是公安管控平台线（如山东省公安厅民用无人驾驶航空器管控与实战一体化平台 1,205.30 万元，包 1 联通数科 1,198.50 万元、包 2 道普信息 6.80 万元）。</p>
+
+  <h3>5.5 事件驱动与租赁服务形态</h3>
+  <p>2024 年 9 月 11 日天津滨海机场无人机扰航事件：29 架次延误、8 架次取消、32 架次备降、约 3,000 名旅客受影响，推动机场要地防护与便携侦测反制装备配置加速；2025 年十五运会形成东莞、深圳龙华、光明、市本级等集中采购高峰。短期保障以租赁计费：重大活动租赁 4.15 万元/场起；城市级 SaaS 运维订阅约 60 万元/年（行业调研口径）。园区可复制"以租代购＋平台运维"模式平滑政务预算年度波动。</p>
+</section>
+
+<!-- ================= 第六章 技术路线与AI赋能 ================= -->
+<section class="chapter" id="ch6">
+  <h2><span class="num">06</span>技术路线与 AI 赋能</h2>
+  <p class="chapter-lead">三层技术体系、六个 AI 赋能点、技术—价格对照，以及检测认证与联合实验室抓手。技术谱系仅作产业方向列示，园区民用产品不涉及军工工艺参数。</p>
+
+  <div class="fig-row"><figure><img src="images/radar_01.jpg" alt="全固态相控阵低空监视雷达（楼顶部署，民用低空安防用途）" loading="lazy"><figcaption>全固态相控阵低空监视雷达（楼顶部署，民用低空安防用途）｜来源：厂商公开产品资料</figcaption></figure><figure><img src="images/cuas_01.jpg" alt="固定式无源无人机频谱侦测系统" loading="lazy"><figcaption>固定式无源无人机频谱侦测系统｜来源：厂商公开产品资料</figcaption></figure><figure><img src="images/sat_ground_01.jpg" alt="卫星互联网地面站多副抛物面天线阵列" loading="lazy"><figcaption>卫星互联网地面站多副抛物面天线阵列｜来源：公开行业资料</figcaption></figure><figure><img src="images/drdefense_01.jpg" alt="雷达侦测与干扰一体化低空防御系统（民用口径）" loading="lazy"><figcaption>雷达侦测与干扰一体化低空防御系统（民用口径）｜来源：公开产品资料</figcaption></figure></div>
+
+  <h3>6.1 三层技术体系</h3>
+  <div class="table-scroll">
+<table style="min-width:560px">
+    <colgroup><col style="width:18%"><col style="width:34%"><col style="width:48%"></colgroup>
+    <thead><tr><th style="width:18%">层级</th><th style="width:34%">能力构成</th><th style="width:48%">园区公共平台支撑</th></tr></thead>
+    <tbody>
+      <tr><td style="width:18%">感知层</td><td style="width:34%">雷达（相控阵/监视）、无线电频谱侦测与 TDOA 网格化定位、光电红外、声学探测、视频识别、RemoteID 识别</td><td style="width:48%">电磁环境试验区、测控指挥中心预留多传感器接入条件，形成统一数据底座</td></tr>
+      <tr><td style="width:18%">平台层</td><td style="width:34%">低空指控与数字孪生平台、机型识别与目标档案、航迹融合跟踪、电子围栏与航线预测、多源告警联动</td><td style="width:48%">对接国家 UOM 与省市监管平台；空天数据要素平台分级分类、本地化存储、合规运营</td></tr>
+      <tr><td style="width:18%">应用层</td><td style="width:34%">要地防护告警与处置引导、城市低空运行监管、物流巡检与场景运营、公共安全事件复盘与研判</td><td style="width:48%">面向公安、机场、能源、监所、边检、重大活动开放"以试代购"场景与场景券</td></tr>
+    </tbody>
+  
+  </table>
+</div>
+
+  <h3>6.2 AI 六个赋能点</h3>
+  <div class="grid g3">
+    <div class="card"><h5>① 目标识别与机型分类</h5><p style="font-size:13.5px">基于频谱特征、回波与光学图像训练分类模型，区分消费级、行业级与大中型机型，建立本地目标档案。</p></div>
+    <div class="card"><h5>② 多传感器融合跟踪</h5><p style="font-size:13.5px">雷达、频谱、光电、声学、视频交叉校验与航迹融合，降低单传感器虚警与盲区误判。</p></div>
+    <div class="card"><h5>③ 航线预测与电子围栏</h5><p style="font-size:13.5px">结合航线历史与禁限飞区生成风险预警，支撑低空智联网调度与区域协同监管。</p></div>
+    <div class="card"><h5>④ 风险研判与指挥调度</h5><p style="font-size:13.5px">事件分级、处置路径推荐、多部门联动留痕，服务公安与重点目标单位值守人员。</p></div>
+    <div class="card"><h5>⑤ 设备运维预测性维护</h5><p style="font-size:13.5px">对探测设备、链路与平台运行状态监测告警，降低园区与驻场运营商的保障成本。</p></div>
+    <div class="card"><h5>⑥ 数据要素沉淀与复用</h5><p style="font-size:13.5px">航迹、影像与处置记录合规沉淀，反哺算法迭代、标准研究与人员培训实训。</p></div>
+  </div>
+
+  <h3>6.3 技术谱系列示（合规口径）</h3>
+  <p>现有处置手段按强度与可逆性形成谱系：无线电干扰压制、导航诱骗、协议接管（链路劫持）、无人机载网捕、低强度处置（喊话警告、声光驱离）等，各有适用场景与约束条件。</p>
+  <div class="note-box">
+    <strong>定向能口径说明：</strong>激光、微波等定向能手段仅作为技术谱系在行业综述中列示；受安全距离、大气衰减与热效应限制，民用公共安全场景仅限特许重大安保与要地场景讨论。<strong>本园区民用产品不涉及定向能武器工艺参数与部署使用</strong>，报告不展开相关技术细节。
+  </div>
+
+  <h3>6.4 检测认证与联合实验室抓手</h3>
+  <ul>
+    <li>绑定工业和信息化部电子第五研究所（国家无人机质检中心）等权威机构，共建低空安防联合实验室与检测认证中心，形成中立化质量背书与园区护城河；</li>
+    <li>对接中国民航适航审定合作机构，为通航整机与 eVTOL 配套提供适航辅导、部件试验与中试场地；</li>
+    <li>与地方公安技术研究单位、中国安全防范产品行业协会合作开展场景测试与标准研究；</li>
+    <li>依托 AI 算力中心承接低空大模型训练、多传感器融合推理与检测算法比对，为入园中小企业提供共享算力与试验条件。</li>
+  </ul>
+</section>
+
+<!-- ================= 第七章 园区总体规划 ================= -->
+<section class="chapter" id="ch7">
+  <h2><span class="num">07</span>园区总体规划（三档标准化）</h2>
+  <p class="chapter-lead">选址逻辑、三档用地与投资参数、功能分区、八大可复制要素与六大特色平台抓手。</p>
+
+  <div class="fig-row three"><figure><img src="images/sjzairport_03.jpg" alt="省会枢纽机场配套服务场景：正定机场 T2 出发层" loading="lazy"><figcaption>省会枢纽机场配套服务场景参照：石家庄正定国际机场 T2 航站楼出发层｜来源：民航资源网</figcaption></figure><figure><img src="images/gaairport_01.jpg" alt="通用机场与试飞中试底座参照：湖北竹山通用机场停机坪与塔台" loading="lazy"><figcaption>通用机场与试飞中试底座参照：湖北竹山通用机场停机坪与塔台｜来源：公开报道</figcaption></figure><figure><img src="images/secctr_02.jpg" alt="园区公共服务平台参照：大型智能监控指挥中心全景" loading="lazy"><figcaption>园区公共服务平台参照：大型智能监控指挥中心全景｜来源：公开行业资料</figcaption></figure></div>
+
+  <h3>7.1 选址逻辑</h3>
+  <p>园区选址优先满足四项硬条件：一是<strong>空域条件</strong>，预留试飞半径与净空条件，空域批复先行、"拿地即开工"；二是<strong>交通衔接</strong>，毗邻运输机场、通用机场或高速公路出入口，满足总装与大件运输；三是<strong>产业依托</strong>，靠近现有航空、电子信息、国防科技工业集聚区或老工业区改造空间；四是<strong>场景就近</strong>，周边具备公安、机场、能源、应急等可开放的真实应用场景。不同档位选址逻辑见第十章四大区域参数表。</p>
+
+  <h3>7.2 三档总体规划参数</h3>
+  <div class="table-scroll">
+<table style="min-width:640px">
+    <colgroup><col style="width:22%"><col style="width:26%"><col style="width:26%"><col style="width:26%"></colgroup>
+    <thead><tr><th style="width:22%">维度</th><th style="width:26%">起步园 A</th><th style="width:26%">标准园 B</th><th style="width:26%">旗舰园 C</th></tr></thead>
+    <tbody>
+      <tr><td style="width:22%">用地规模</td><td style="width:26%">300 亩</td><td style="width:26%">1,000 亩</td><td style="width:26%">3,000 亩</td></tr>
+      <tr><td style="width:22%">容积率（综合）</td><td style="width:26%">1.2</td><td style="width:26%">1.2</td><td style="width:26%">1.3</td></tr>
+      <tr><td style="width:22%">载体建筑面积</td><td style="width:26%">24 万㎡</td><td style="width:26%">80 万㎡</td><td style="width:26%">260 万㎡</td></tr>
+      <tr><td style="width:22%">平台公司总投资</td><td style="width:26%">5 亿元</td><td style="width:26%">20 亿元</td><td style="width:26%">60 亿元</td></tr>
+      <tr><td style="width:22%">撬动入园企业累计固投</td><td style="width:26%">约 18 亿元（约 600 万元/亩）</td><td style="width:26%">约 75 亿元（约 750 万元/亩）</td><td style="width:26%">约 240 亿元（约 800 万元/亩）</td></tr>
+      <tr><td style="width:22%">达产亩均税收目标</td><td style="width:26%">≥50 万元/亩</td><td style="width:26%">≥60 万元/亩</td><td style="width:26%">≥70 万元/亩</td></tr>
+      <tr><td style="width:22%">建设周期</td><td style="width:26%">3 年（12—18 个月起步）</td><td style="width:26%">3 年（24—30 个月建成）</td><td style="width:26%">3 年（30—36 个月建成）</td></tr>
+      <tr><td style="width:22%">适用对象</td><td style="width:26%">县域 / 临空小点 / 老工业区改造起步</td><td style="width:26%">地级市 / 省会临空核心园</td><td style="width:26%">省会 / 国家枢纽、国家级经开区</td></tr>
+    </tbody>
+  
+  </table>
+</div>
+  <div class="note-box">口径提示：国家级开发区监测口径"固投强度约 790 万元/亩、地均税收约 55.5 万元/亩"为入园企业与平台合并的辖区口径；本模型"平台公司总投资"仅含土地一级开发、基础设施、标准载体与公共平台设备，二者不可混用。</div>
+
+  <h3>7.3 功能分区（五区，占比可 ±5 个百分点）</h3>
+  <div class="chart-row">
+    <div class="chart-box">
+      <div class="cap">图 7-1　园区功能分区面积占比（%）</div>
+      <div id="chart-zone" class="chart"></div>
+      <div class="src">数据来源：03 号财务假设与口径文件冻结版功能分区方案；占比可按地块条件 ±5 个百分点调整。</div>
+    </div>
+    <div class="chart-box">
+      <div class="cap">分区内容说明</div>
+      <table style="margin-top:6px">
+        <colgroup><col style="width:34%"><col style="width:66%"></colgroup>
+        <tbody>
+          <tr><td>总部研发区 15%</td><td>AI 指控联合实验室、企业总部、保密设计中心</td></tr>
+          <tr><td>试飞总装区 35%</td><td>500 米级跑道/垂直起降场、单栋 5,000—7,000 ㎡总装标准厂房；空域批复先行、"拿地即开工"</td></tr>
+          <tr><td>试验检测区 20%</td><td>电磁环境试验区、测控指挥中心、EMC/风洞、检测认证中心</td></tr>
+          <tr><td>场景验证区 20%</td><td>城市低空 1:1 试验场、低空安防靶场，面向政法系统"以试代购"</td></tr>
+          <tr><td>配套服务区 10%</td><td>人才社区、保密"三证联办"服务站、展示交易中心</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <h3>7.4 八大可复制核心要素</h3>
+  <p>标准厂房；试飞场地＋空域批复；测控指挥＋电磁环境试验区；检测认证中心；共享制造中心；产业基金；人才政策；保密与军工服务。其中"三证联办"（保密资质、科研生产许可、装备承制资格前置辅导）按 2025 年 7 月 1 日新规要求执行：涉密场所 ≥100 ㎡、专职涉密人员 ≥10 名且社保连续 ≥6 个月、外资间接持股 ≤20%。</p>
+
+  <h3>7.5 六大 AI+空天特色平台（抓手项目，可单列申报专项债与中省资金）</h3>
+  <ol>
+    <li><strong>低空飞行服务站</strong>（A 类/B 类）：对接国家 UOM 与省市监管平台；</li>
+    <li><strong>低空安防联合实验室与检测认证中心</strong>：绑定电子五所等权威机构，形成检测认证护城河；</li>
+    <li><strong>空天数据要素平台</strong>：航迹、遥感、北斗时空数据分级分类、本地化存储、合规运营；</li>
+    <li><strong>AI 算力中心</strong>：低空大模型训练、多传感器融合推理；</li>
+    <li><strong>城市级低空安防"以租代购"运营平台</strong>：面向公安与重点目标单位提供驻场服务；</li>
+    <li><strong>试飞中试与共享制造中心</strong>：复材、结构件、总装共享产线与试飞场地。</li>
+  </ol>
+</section>
+
+<!-- ================= 第八章 招商图谱 ================= -->
+<section class="chapter" id="ch8">
+  <h2><span class="num">08</span>产业链招商图谱（三赛道×三层级长名单）</h2>
+  <p class="chapter-lead">名单为招商目标库，据公开信息整理（2026 年 10 月）；企业经营、资质与上市状态以工商登记和公开披露为准，签约前逐一尽调。策略：龙头树地标、专精特新撑密度、初创育生态。</p>
+
+  <div class="fig-row three"><figure><img src="images/rocket_01.jpg" alt="商业航天链主企业总装厂房参照：蓝箭航天朱雀二号总装厂房" loading="lazy"><figcaption>商业航天链主企业总装厂房参照：蓝箭航天朱雀二号总装厂房｜来源：新浪财经</figcaption></figure><figure><img src="images/propeller_01.jpg" alt="复材产业链配套：我国首款获批复合材料航空螺旋桨机库装配" loading="lazy"><figcaption>复材产业链配套：我国首款获批复合材料航空螺旋桨机库装配｜来源：公开报道</figcaption></figure><figure><img src="images/lecpark_02.jpg" alt="低空经济产业园招商参照：江西赣州低空经济产业园航拍" loading="lazy"><figcaption>低空经济产业园招商参照：江西赣州低空经济产业园航拍｜来源：新华社</figcaption></figure></div>
+
+  <h3>8.1 赛道一：低空安防装备与低空监管服务</h3>
+  <div class="table-scroll">
+<table style="min-width:540px">
+    <colgroup><col style="width:32%"><col style="width:68%"></colgroup>
+    <tbody>
+      <tr><td style="width:32%"><strong>行业龙头</strong><br>树地标 / 总包锚点</td><td style="width:68%">中国电科系（四创电子 600990"低空雪亮/悟空大模型"、国睿科技 600562、电科通信院线）；中国电子/中国电信（天翼星盾 5G-A 低空网）；中科星图（慧安，低空数字孪生平台）；高德红外 002414（红外全链＋车载综合防控）；海康威视、大华股份（公共安全整体方案）；中国航天科工体系化低空安防组合仅作公开报道列示，园区产品定位不参照军工体系。</td></tr>
+      <tr><td style="width:32%"><strong>专精特新</strong><br>撑密度 / 订单主力</td><td style="width:68%">纳睿雷达 688522（双极化相控阵）、大立科技 002214（红外探测器）、上海特金（TDOA 网格化，国家级小巨人）、理工全盛（北理工背景，全频段察打诱一体）、杰能科世（城市级平台，LAS"悟穹"大模型）、华诺星空、北京历正、普宙科技（车载集成）、浙江凡双、云翔科技（电力行业）、神州明达、西安雷擎、成都空御、金锐世纪、青岛中科防务、南京冠航、道普信息、中交遥感天域、数字政通（平台运营）。</td></tr>
+      <tr><td style="width:32%"><strong>初创 / 新锐</strong><br>育生态 / 场景券</td><td style="width:68%">低空 AI 识别、频谱指纹、协议接管、无人机载网捕、低空 SaaS 运营方向早期团队；通过创新创业大赛、电科/航天系孵化器、高校成果转化中心定向发掘；与北京理工大学、电子科技大学、西安电子科技大学、国防科技大学等共建概念验证中心，储备项目动态入库。</td></tr>
+      <tr><td style="width:32%"><strong>检测 / 认证 / 标准（软锚）</strong></td><td style="width:68%">工业和信息化部电子第五研究所（国家无人机质检中心）、中国民航适航审定合作机构、地方公安一所/三所技术合作、中国安全防范产品行业协会。</td></tr>
+    </tbody>
+  
+  </table>
+</div>
+
+  <h3>8.2 赛道二：有人机 / 通用航空 / eVTOL 整机与配套</h3>
+  <div class="table-scroll">
+<table style="min-width:540px">
+    <colgroup><col style="width:32%"><col style="width:68%"></colgroup>
+    <tbody>
+      <tr><td style="width:32%"><strong>行业龙头</strong><br>链主 / 产值流量核心</td><td style="width:68%">亿航智能（EH216-S 全球首个四证齐备，OC 2025-03，合肥商业试运营）；峰飞航空（V2000CG 全球首个吨级 TC，2025-07 首架交付）；小鹏汇天（陆地航母，广州工厂年产 1 万台规划，订单口径近 5,000—7,000 台并注明时点）；沃飞长空（AE200，吉利系，<strong>TC 尚未取得</strong>，四川证监局辅导备案、拟科创板）；航空工业通飞 / 中航西飞 000768；万丰奥威 002085（钻石飞机）；中航无人机、航天彩虹 002389；腾盾科创（双尾蝎，创业板 IPO 受理）。</td></tr>
+      <tr><td style="width:32%"><strong>专精特新</strong><br>取证梯队＋核心配套</td><td style="width:68%">沃兰特航空（VE25，2026 年完成 3 亿美元 C 轮）、御风未来（M1）、时的科技（E20，芜湖年产 200 架规划）、山河科技、宗申动力 001696（航空活塞发动机）、航发动力 600893 / 中国航发通航动力（通航动力与电推进）、光威复材 300699、中复神鹰 688295（碳纤维）、爱乐达 300696、利君股份、航宇科技 688239（航空锻件）、卧龙电驱 600580（电推进电机）、宁德时代 300750（航空电池，已战投峰飞）、珠海冠宇、孚能科技（航空动力电池）。</td></tr>
+      <tr><td style="width:32%"><strong>初创 / 新锐</strong></td><td style="width:68%">分布式电推进、倾转旋翼、飞行控制、轻量化复材、降落伞/气囊、机载航电方向成长企业，按年度融资榜与 eVTOL 产业联盟名单动态招引；区域可设"低空整机中试＋适航辅导"专项，吸引取证中后期团队异地建厂。</td></tr>
+      <tr><td style="width:32%"><strong>运营 / 服务</strong></td><td style="width:68%">低空物流（顺丰丰翼、美团无人机、京东物流）、城市空中交通运营商、通航维修 MRO、飞行培训院校、航空金融租赁（中航租赁、苏银金租）。</td></tr>
+    </tbody>
+  
+  </table>
+</div>
+
+  <h3>8.3 赛道三：空天信息（卫星互联网 / 北斗 / 遥感 / 商业航天）</h3>
+  <div class="table-scroll">
+<table style="min-width:540px">
+    <colgroup><col style="width:32%"><col style="width:68%"></colgroup>
+    <tbody>
+      <tr><td style="width:32%"><strong>行业龙头</strong></td><td style="width:68%">中国星网（GW 星座）、上海垣信（千帆星座，在轨 256 颗）、中国卫通 601698、中国电信（卫星运营＋5G-A）、银河航天（低成本批产卫星）、长光卫星（吉林一号遥感星座）、航天宏图 688066（PIE 遥感）、中科星图 688568（数字地球＋低空平台）、北斗星通 002151、华力创通 300045、海格通信 002465。</td></tr>
+      <tr><td style="width:32%"><strong>专精特新</strong></td><td style="width:68%">合众思壮 002383、华测导航 300627、千寻位置（高精度位置服务）、振芯科技 300101、国星宇航（AI 卫星）、微纳星空、九天微星、时空道宇（吉利系，车载＋低空）、航天驭星（测运控）、星图测控；商业火箭：蓝箭航天、星河动力、天兵科技、东方空间、中科宇航（固体/液氧甲烷可重复使用火箭方向）。</td></tr>
+      <tr><td style="width:32%"><strong>初创 / 新锐</strong></td><td style="width:68%">遥感 AI 解译、星上算力、相控阵终端芯片、卫星物联网（天通/物联网星座）、通导一体模组、PNT 授时安全方向团队；空天数据应用（低空导航一张图、气象、应急、自然资源）创业企业。</td></tr>
+      <tr><td style="width:32%"><strong>公共平台 / 机构（软锚）</strong></td><td style="width:68%">中国信通院、中国电子标准院、地方测绘地理信息院、北斗产业园/卫星导航创新中心、空天数据交易所（数据要素流通）。</td></tr>
+    </tbody>
+  
+  </table>
+</div>
+
+  <h3>8.4 可复制招商政策包（"一企一策"清单）</h3>
+  <div class="grid g2">
+    <div class="card"><h5>资金与载体</h5><p style="font-size:13.5px">落户奖励（按固投/实收资本分档）；租金三免两减半；首台（套）/首版次补贴；研发费用补助与高企、专精特新奖励；产业基金股权投资（让利与回购条款）。</p></div>
+    <div class="card"><h5>场景与订单</h5><p style="font-size:13.5px">开放城市、机场、能源、公安"以试代购"场景与场景券；链主供应链对接会；省级集采目录推荐撮合。</p></div>
+    <div class="card"><h5>资质与合规</h5><p style="font-size:13.5px">适航与保密"三证联办"代办；外贸与两用物项合规辅导（对接 2026 年第 49 号公告）；检测认证绿色通道。</p></div>
+    <div class="card"><h5>人才与配套</h5><p style="font-size:13.5px">购房、落户、子女教育与团队资助；人才公寓与通勤保障；产业人才职称评定专项通道。</p></div>
+  </div>
+</section>
+
+<!-- ================= 第九章 商业模式与财务测算 ================= -->
+<section class="chapter" id="ch9">
+  <h2><span class="num">09</span>商业模式与财务测算</h2>
+  <p class="chapter-lead">六收入曲线、资金结构、三档十年模型与评价指标。全部财务数字取自《04_财务测算结果.json》，计算期 10 年（Y1—Y10），折现率 8%，现金流按年末发生。</p>
+
+  <div class="fig-row three"><figure><img src="images/lecpark_03.jpg" alt="标准化厂房载体参照：陕西丹凤县低空经济产业园标准化厂房" loading="lazy"><figcaption>标准化厂房载体参照：陕西丹凤县低空经济产业园标准化厂房｜来源：陕西传媒网</figcaption></figure><figure><img src="images/gaairport_03.jpg" alt="通用机场载体参照：石家庄栾城通用机场停机坪" loading="lazy"><figcaption>通用机场载体参照：石家庄栾城通用机场停机坪｜来源：河北经济网</figcaption></figure><figure><img src="images/djidock_01.jpg" alt="无人值守机巢产品参照：大疆机场 4 自动换电无人值守机巢" loading="lazy"><figcaption>无人值守机巢产品参照：大疆机场 4 自动换电无人值守机巢｜来源：厂商公开产品资料</figcaption></figure></div>
+
+  <h3>9.1 六条收入曲线（成熟期占比区间）</h3>
+  <div class="table-scroll">
+<table style="min-width:560px">
+    <colgroup><col style="width:26%"><col style="width:18%"><col style="width:56%"></colgroup>
+    <thead><tr><th style="width:26%">收入曲线</th><th style="width:18%">成熟期占比</th><th style="width:56%">构成说明</th></tr></thead>
+    <tbody>
+      <tr><td style="width:26%">载体租售</td><td style="width:18%">35%—45%</td><td style="width:56%">40% 定制出让（Y2—Y4 按 30%/40%/30% 确认），60% 长期持有租赁；出让单价与租金按三档参数执行</td></tr>
+      <tr><td style="width:26%">产业服务</td><td style="width:18%">15%—20%</td><td style="width:56%">检测认证、试飞测试、电磁/EMC 试验、三证联办、培训、会展交易</td></tr>
+      <tr><td style="width:26%">平台运营与数据</td><td style="width:18%">15%—20%</td><td style="width:56%">省市监管平台运维、城市级"以租代购"运营、空天数据要素、AI 算力服务</td></tr>
+      <tr><td style="width:26%">产业投资收益</td><td style="width:18%">10%—20%</td><td style="width:56%">参股企业分红、公允价值变动、子基金 Carry 与管理费净额；Y8 起体现退出高峰（保守口径，不计基金本金回收）</td></tr>
+      <tr><td style="width:26%">配套运营</td><td style="width:18%">5%—10%</td><td style="width:56%">人才公寓、商业、停车、能源站</td></tr>
+      <tr><td style="width:26%">税收增量返还</td><td style="width:18%">5%—10%</td><td style="width:56%">以地方留成作为增量基数，与招商履约考核挂钩；平台公司收到后按"其他收益/政府补助"入账，<strong>不做税收减免承诺</strong></td></tr>
+    </tbody>
+  
+  </table>
+</div>
+
+  <h3>9.2 资金来源结构（平台公司口径，三档一致）</h3>
+  <div class="table-scroll">
+<table style="min-width:560px">
+    <colgroup><col style="width:32%"><col style="width:18%"><col style="width:50%"></colgroup>
+    <thead><tr><th style="width:32%">来源</th><th style="width:18%">占比</th><th style="width:50%">成本/期限假设</th></tr></thead>
+    <tbody>
+      <tr><td style="width:32%">财政资金（中央预算内/超长期特别国债补助、本级财政拨款）</td><td style="width:18%">10%</td><td style="width:50%">无偿，计入资本公积</td></tr>
+      <tr><td style="width:32%">地方政府专项债（产业园/低空基础设施，收益自平衡）</td><td style="width:18%">25%</td><td style="width:50%">利率 2.5%，期限 15 年，建设期付息，第 4 年起等额本金</td></tr>
+      <tr><td style="width:32%">政策性银行＋商业银行贷款</td><td style="width:18%">40%</td><td style="width:50%">利率 4.0%（LPR 基准），期限 10—12 年，建设期付息，第 4 年起等额本金</td></tr>
+      <tr><td style="width:32%">产业基金（引导基金让利＋社会资本 GP＋央企链主 CVC）</td><td style="width:18%">20%</td><td style="width:50%">权益/明股实债，要求年化 6%—8%，第 6—8 年通过 REITs/股权转让退出</td></tr>
+      <tr><td style="width:32%">平台公司自筹（一二级联动、载体预售、REITs 回笼）</td><td style="width:18%">5%</td><td style="width:50%">—</td></tr>
+    </tbody>
+  
+  </table>
+</div>
+  <p>综合资本金比例 35%（财政 10%＋基金 20%＋自筹 5%），债务比例 65%；建设期利息由自筹资金平衡垫资。</p>
+
+  <h3>9.3 三档静态投资构成（亿元）</h3>
+  <div class="chart-box">
+    <div class="cap">图 9-1　三档静态投资构成堆叠（亿元，JSON 04 号文件）</div>
+    <div id="chart-inv" class="chart"></div>
+    <div class="src">数据来源：04_财务测算结果.json → tiers.investment_composition；土地一级开发 60% 入土地使用权池、40% 入基础设施池。</div>
+  </div>
+
+  <h3>9.4 三档十年收入与净利润（Y1—Y10，亿元）</h3>
+  <div class="chart-box">
+    <div class="cap">图 9-2　三档平台公司十年营业收入曲线（亿元）</div>
+    <div id="chart-rev" class="chart"></div>
+    <div class="src">数据来源：04_财务测算结果.json → tiers.yearly.revenue.total；Y2—Y4 含载体出让收入，Y5 起转为租赁与常态经营为主。</div>
+  </div>
+  <div class="chart-box">
+    <div class="cap">图 9-3　三档平台公司十年净利润曲线（亿元）</div>
+    <div id="chart-profit" class="chart"></div>
+    <div class="src">数据来源：04_财务测算结果.json → tiers.yearly.net_profit；所得税 25%，亏损向后结转（模型期内按累计余额简化处理）。</div>
+  </div>
+
+  <h3>9.5 累计现金流与投资回收期</h3>
+  <div class="chart-box">
+    <div class="cap">图 9-4　三档累计净现金流曲线（亿元；零点为回收期参照线）</div>
+    <div id="chart-cumcf" class="chart"></div>
+    <div class="src">数据来源：04_财务测算结果.json → tiers.yearly.cumulative_net_cf；静态回收期 A 8.25 年、B 8.05 年、C 6.76 年；动态回收 A/B 计算期内未回收、C 8.13 年。</div>
+  </div>
+  <h3>9.6 评价指标汇总（基准折现率 8%）</h3>
+  <div class="table-scroll">
+<table style="min-width:640px">
+    <colgroup><col style="width:34%"><col style="width:22%"><col style="width:22%"><col style="width:22%"></colgroup>
+    <thead><tr><th style="width:34%">指标</th><th style="width:22%">起步园 A</th><th style="width:22%">标准园 B</th><th style="width:22%">旗舰园 C</th></tr></thead>
+    <tbody>
+      <tr><td style="width:34%">静态总投资（亿元）</td><td style="width:22%">5.0</td><td style="width:22%">20.0</td><td style="width:22%">60.0</td></tr>
+      <tr><td style="width:34%">全投资税后 IRR</td><td style="width:22%">6.29%</td><td style="width:22%">7.11%</td><td style="width:22%">13.82%</td></tr>
+      <tr><td style="width:34%">资本金税后 IRR</td><td style="width:22%">17.93%</td><td style="width:22%">20.75%</td><td style="width:22%">43.19%</td></tr>
+      <tr><td style="width:34%">全投资 NPV（8%，万元）</td><td style="width:22%">−2,723.7</td><td style="width:22%">−5,611.7</td><td style="width:22%">+109,136.9</td></tr>
+      <tr><td style="width:34%">资本金 NPV（8%，万元）</td><td style="width:22%">5,416.8</td><td style="width:22%">26,950.2</td><td style="width:22%">206,822.6</td></tr>
+      <tr><td style="width:34%">静态投资回收期（年）</td><td style="width:22%">8.25</td><td style="width:22%">8.05</td><td style="width:22%">6.76</td></tr>
+      <tr><td style="width:34%">动态投资回收期</td><td style="width:22%">计算期 10 年内未回收</td><td style="width:22%">计算期 10 年内未回收</td><td style="width:22%">8.13 年</td></tr>
+    </tbody>
+  
+  </table>
+</div>
+  <div class="warn-box">
+    <strong>如实说明（不作美化、不回避）：</strong>A、B 两档平台公司承担公共基础设施与平台服务职能，含较多公益属性投入，8% 折现率下全投资 NPV 为负；两档资本金 IRR 为正（17.93%、20.75%），资本金层面具备吸引力，这是公共平台类项目"社会效益优先、财务效益平衡"的正常表现。旗舰园 C 在冻结口径下持有出租面积 156 万㎡、租金 48 元/㎡/月，达产年返税约 4.79 亿元、产业投资净收益 2.50 亿元，单位经济强度显著高于 A/B，全投资 IRR 13.82%、NPV 为正。达产年（Y7）平台营收合计（含返税）A 1.79 亿元、B 6.76 亿元、C 22.62 亿元；常态经营收入（不含出让与返税）A 1.44 亿元、B 5.40 亿元、C 17.84 亿元。模型严格执行冻结收入曲线，前期 1.0—1.2 / 3.8—4.3 / 11—13 亿元的粗估区间仅作参考，正式立项时以可研报告复核。资本金 IRR 受 65% 债务杠杆放大，仅作辅助参考；计算期内未处置资产、未偿还期末剩余专项债余额。
+  </div>
+
+  <h3>9.7 敏感性分析：六因素对全投资 IRR 的影响（以起步园 A 为基准）</h3>
+  <div class="chart-box">
+    <div class="cap">图 9-5　六因素敏感性龙卷风图（基准 IRR 6.29%，纵轴按影响幅度排序，百分点）</div>
+    <div id="chart-tornado" class="chart"></div>
+    <div class="src">数据来源：04_财务测算结果.json → tiers.A.sensitivity.factors；贷款利率不改变全投资 IRR（全投资口径不含融资成本），±50bp 仅影响资本金 IRR（A：17.31%—18.56%）。</div>
+  </div>
+  <p>结论：<strong>返税比例为第一敏感因素</strong>（有利 100% 全期 → IRR 9.87%，不利 60% 全期 → 5.66%，摆动 3.58 个百分点）；其后为达产速度（推迟 1 年 → 3.67%）与投资额（+10% → 4.08%）。标准园 B 前两位为返税比例（摆动 3.56 个百分点）与投资额（2.68 个百分点）；旗舰园 C 前两位为返税比例（3.69 个百分点）与投资额（3.33 个百分点）。项目筹备期应优先锁定招商履约协议中的返还比例与基数条款，并将达产节奏、投资概算控制列为核心管理目标。</p>
+
+  <h3>9.8 税收与就业社会效益（十年累计 / 达产年口径）</h3>
+  <div class="table-scroll">
+<table style="min-width:640px">
+    <colgroup><col style="width:34%"><col style="width:22%"><col style="width:22%"><col style="width:22%"></colgroup>
+    <thead><tr><th style="width:34%">效益指标</th><th style="width:22%">起步园 A</th><th style="width:22%">标准园 B</th><th style="width:22%">旗舰园 C</th></tr></thead>
+    <tbody>
+      <tr><td style="width:34%">十年累计全口径税收（亿元）</td><td style="width:22%">10.44</td><td style="width:22%">41.76</td><td style="width:22%">146.16</td></tr>
+      <tr><td style="width:34%">十年累计地方留成（亿元）</td><td style="width:22%">3.97</td><td style="width:22%">15.87</td><td style="width:22%">55.54</td></tr>
+      <tr><td style="width:34%">十年累计平台税收返还（亿元）</td><td style="width:22%">2.57</td><td style="width:22%">10.27</td><td style="width:22%">35.96</td></tr>
+      <tr><td style="width:34%">达产直接就业（人）</td><td style="width:22%">3,372</td><td style="width:22%">11,200</td><td style="width:22%">36,260</td></tr>
+      <tr><td style="width:34%">上下游带动就业（人，1:2.5）</td><td style="width:22%">8,430</td><td style="width:22%">28,000</td><td style="width:22%">90,650</td></tr>
+      <tr><td style="width:34%">达产亩均税收目标（万元/亩）</td><td style="width:22%">50</td><td style="width:22%">60</td><td style="width:22%">70</td></tr>
+    </tbody>
+  
+  </table>
+</div>
+  <p>就业测算口径：产业厂房 12 人/千㎡、研发载体 18 人/千㎡，配套另计；A 档厂房岗位 2,016 人、研发岗位 1,296 人、平台员工 60 人；B 档 6,720＋4,320＋160 人；C 档 21,840＋14,040＋380 人。</p>
+
+</section>
+
+<!-- ================= 第十章 全国复制 ================= -->
+<section class="chapter" id="ch10">
+  <h2><span class="num">10</span>全国复制推广：四大区域 × 一省一策</h2>
+  <p class="chapter-lead">同一产品内核、四套区域参数与五个经济带落位建议；各地在选址、档位、产业侧重与资金组合上按资源禀赋适配。</p>
+
+  <div class="fig-row three"><figure><img src="images/tangshan_02.jpg" alt="东部沿海智慧港口场景：唐山港京唐港区智慧集装箱码头" loading="lazy"><figcaption>东部沿海智慧港口场景：唐山港京唐港区智慧集装箱码头｜来源：新浪财经</figcaption></figure><figure><img src="images/sjzairport_01.jpg" alt="省会枢纽机场场景：石家庄正定国际机场 T1 国际航站楼" loading="lazy"><figcaption>省会枢纽机场场景：石家庄正定国际机场 T1 国际航站楼｜来源：公开资料</figcaption></figure><figure><img src="images/chongli_01.jpg" alt="高寒地区大型活动场景：崇礼国家跳台滑雪中心雪如意夏季全景航拍" loading="lazy"><figcaption>高寒地区大型活动场景：崇礼国家跳台滑雪中心雪如意夏季全景航拍｜来源：视觉中国</figcaption></figure></div>
+
+  <h3>10.1 四大区域标准化参数表</h3>
+  <div class="table-scroll">
+<table style="min-width:760px">
+    <colgroup><col style="width:14%"><col style="width:20%"><col style="width:18%"><col style="width:18%"><col style="width:16%"><col style="width:14%"></colgroup>
+    <thead><tr><th style="width:14%">区域</th><th style="width:20%">选址与空域条件</th><th style="width:18%">投资强度参考（万元/亩）</th><th style="width:18%">产业侧重</th><th style="width:16%">市场侧重</th><th style="width:14%">政策侧重点</th></tr></thead>
+    <tbody>
+      <tr><td style="width:14%">东部沿海</td><td style="width:20%">临空经济区 / 老工业区改造；空域紧张，优先垂直起降与城市运营场景</td><td style="width:18%">800—1,000</td><td style="width:18%">总部研发、AI 平台、空天信息、整机总装出口</td><td style="width:16%">出口＋一线城市要地防护＋城市运营</td><td style="width:14%">研发补助、场景开放、数据要素、基金让利</td></tr>
+      <tr><td style="width:14%">中部地区</td><td style="width:20%">通用机场周边 / 老工业基地；空域条件较好，辐射中西部</td><td style="width:18%">550—800</td><td style="width:18%">整机与复材配套、检测认证、通航运营</td><td style="width:16%">中部要地防护＋物流＋文旅</td><td style="width:14%">专项债、厂房三免两减半、订单撮合</td></tr>
+      <tr><td style="width:14%">西部地区</td><td style="width:20%">高原 / 边疆 / 荒漠试验场；辐射东盟、中亚；气候与地形差异化试验条件</td><td style="width:18%">450—750（边疆 450 起）</td><td style="width:18%">边防低空安防场景验证、高原通航、卫星应用、遥感测控</td><td style="width:16%">沿边防护＋高原试验＋场景服务</td><td style="width:14%">中央预算内、转移支付、人才补贴、边疆场景示范</td></tr>
+      <tr><td style="width:14%">东北地区</td><td style="width:20%">老工业基地；高寒试验场与低空飞行培训基地基础较好</td><td style="width:18%">450—600</td><td style="width:18%">高寒试验、飞行培训、复材与结构件、寒地装备</td><td style="width:16%">区域要地防护＋培训＋检修 MRO</td><td style="width:14%">专项债、人才回流政策、装备首台套</td></tr>
+    </tbody>
+  
+  </table>
+</div>
+
+  <h3>10.2 四大区域投资强度区间对比</h3>
+  <div class="chart-box">
+    <div class="cap">图 10-1　四大区域投资强度参考区间（万元/亩；区间中值为测算示意，落地以当地国土空间与出让条件为准）</div>
+    <div id="chart-region" class="chart"></div>
+    <div class="src">数据来源：00 号蓝本四大区域参数表；区间值为招商谈判参考范围，非承诺性指标。</div>
+  </div>
+
+  <h3>10.3 五个经济带落位建议</h3>
+  <div class="grid g3">
+    <div class="card"><h5>京津冀临空带</h5><p style="font-size:13.5px">旗舰园或标准园：总部研发与 AI 平台集聚，对接首都机场群与城市级监管平台示范场景。</p></div>
+    <div class="card"><h5>长三角产业带</h5><p style="font-size:13.5px">标准园为主：整机与核心配套、空天信息总部，依托苏州、无锡、合肥、芜湖现有航空与卫星产业基础。</p></div>
+    <div class="card"><h5>粤港澳大湾区</h5><p style="font-size:13.5px">旗舰园：eVTOL 总装、低空运营与出口基地，对接深圳 2,000 架无人机出海、广州花都综合保障基地。</p></div>
+    <div class="card"><h5>成渝双城圈</h5><p style="font-size:13.5px">标准园：西部场景验证与空天信息配套，对接成都 8 只超百亿元基金与重庆 20 亿元空天低空基金。</p></div>
+    <div class="card"><h5>沿边与高原试验带</h5><p style="font-size:13.5px">起步园＋场景验证基地：边防要地防护场景、高原与寒地试验、口岸低空监管服务。</p></div>
+  </div>
+
+  <h3>10.4 "一省一策"可调参数清单</h3>
+  <p>各省复制时在产品内核不变前提下，调整下列参数：选址档位（300 / 1,000 / 3,000 亩）、容积率与载体比例、产业侧重三赛道权重、招商目标名单、基金规模与让利条款、专项债与政策性贷款配比、人才政策力度、空域与场景开放范围、检测认证中心等级。品牌标识、运营服务手册、平台系统与标准厂房模块保持统一，形成"一总部＋多基地＋边防场景验证"网络。</p>
+</section>
+
+<!-- ================= 第十一章 路线图与保障 ================= -->
+<section class="chapter" id="ch11">
+  <h2><span class="num">11</span>落地实施路线图与保障机制</h2>
+  <p class="chapter-lead">四条工作泳道并行推进，里程碑按"先报批报建、再建设招商、同步融资、后培育退出"排布。</p>
+
+  <div class="fig-row three"><figure><img src="images/rocket_02.jpg" alt="商业航天发射场建设节奏参照：朱雀二号竖立发射场" loading="lazy"><figcaption>商业航天发射场建设节奏参照：朱雀二号竖立发射场｜来源：经济参考报</figcaption></figure><figure><img src="images/sat_ground_03.jpg" alt="卫星地面站天线雷达罩吊装施工场景" loading="lazy"><figcaption>卫星地面站天线雷达罩吊装施工场景｜来源：公开报道</figcaption></figure><figure><img src="images/propeller_02.jpg" alt="制造车间与共享产线参照：航空螺旋桨装配检验车间" loading="lazy"><figcaption>制造车间与共享产线参照：航空螺旋桨装配检验车间｜来源：公开报道</figcaption></figure></div>
+
+  <h3>11.1 实施甘特图（0—60 个月）</h3>
+  <div class="chart-box">
+    <div class="cap">图 11-1　项目落地四条泳道任务甘特图（月）</div>
+    <div id="chart-gantt" class="chart" style="height:460px"></div>
+    <div class="src">数据来源：00 号蓝本 7.3 节落地阶段与节点；起步园 A 压缩至 12—18 个月起步，旗舰园 C 30—36 个月建成。</div>
+  </div>
+
+  <h3>11.2 里程碑节点</h3>
+  <div class="table-scroll">
+<table style="min-width:560px">
+    <colgroup><col style="width:18%"><col style="width:32%"><col style="width:50%"></colgroup>
+    <thead><tr><th style="width:18%">阶段</th><th style="width:32%">时间节点</th><th style="width:50%">关键成果</th></tr></thead>
+    <tbody>
+      <tr><td style="width:18%">启动期</td><td style="width:32%">第 0—6 个月</td><td style="width:50%">完成可研与决策立项；专项债入库申报；平台公司组建；引导基金与链主框架协议；用地与空域条件落实</td></tr>
+      <tr><td style="width:18%">建设一期</td><td style="width:32%">第 6—12 个月</td><td style="width:50%">一期厂房、试飞场地与公共平台开工；首批场景开放与场景券发布；首批龙头企业签约</td></tr>
+      <tr><td style="width:18%">建成投产</td><td style="width:32%">第 1—3 年</td><td style="width:50%">分期建成、竣工即投产；链主与专精特新企业落地；检测认证中心与 AI 算力中心投用；专项债与贷款按进度提款</td></tr>
+      <tr><td style="width:18%">达产培育</td><td style="width:32%">第 3—5 年</td><td style="width:50%">招商完成度 ≥70%，实现达产指标；启动 Pre-REITs 资产包培育；基金按约定条款推进退出；异地复制选址与标准输出</td></tr>
+    </tbody>
+  
+  </table>
+</div>
+
+  <h3>11.3 平台公司股权结构（标准园 B 示例）</h3>
+  <div class="table-scroll">
+<table style="min-width:560px">
+    <colgroup><col style="width:30%"><col style="width:20%"><col style="width:50%"></colgroup>
+    <thead><tr><th style="width:30%">出资方</th><th style="width:20%">持股比例</th><th style="width:50%">角色</th></tr></thead>
+    <tbody>
+      <tr><td style="width:30%">地方政府（平台公司＋财政出资）</td><td style="width:20%">35%</td><td style="width:50%">控股股东，公共资产监管与公共平台职能</td></tr>
+      <tr><td style="width:30%">产业引导基金（省级＋市级）</td><td style="width:20%">25%</td><td style="width:50%">让利优先、回购条款前置约定</td></tr>
+      <tr><td style="width:30%">专业运营商（品牌＋招商＋运营）</td><td style="width:20%">20%</td><td style="width:50%">绑定管理协议与业绩对赌，输出服务标准与体系</td></tr>
+      <tr><td style="width:30%">央企/链主社会资本＋园区基金 LP</td><td style="width:20%">20%</td><td style="width:50%">订单锚点、供应链对接与市场化资本补充</td></tr>
+    </tbody>
+  
+  </table>
+</div>
+  <p>起步园 A 可由地方平台公司控股、运营商小额参股；旗舰园 C 引入省级平台与链主共同出资，强化规模与资产证券化条件。</p>
+
+  <h3>11.4 组织架构与六项政策请求</h3>
+  <p>平台公司下设：招商运营部、工程建设部、平台技术部（飞服/安防运营/AI 算力）、企业服务部（三证联办与合规辅导）、财务部（基金与专项债台账）、综合保障部。</p>
+  <div class="grid g2">
+    <div class="card"><h5>① 专项债与中央资金</h5><p style="font-size:13.5px">将园区平台、试飞中试、检测认证与算力中心纳入地方专项债项目库与"两重"储备清单，争取超长期特别国债与中央预算内补助。</p></div>
+    <div class="card"><h5>② 基金与金融工具</h5><p style="font-size:13.5px">设立省市级空天低空产业基金，明确让利与回购机制；开展科创债、产业园 REITs 与 Pre-REITs 培育。</p></div>
+    <div class="card"><h5>③ 空域与场景</h5><p style="font-size:13.5px">协调空域批复与试飞场地条件，开放政务、公安、机场、能源、应急场景与场景券。</p></div>
+    <div class="card"><h5>④ 用地与载体</h5><p style="font-size:13.5px">保障园区用地指标、容积率与配套设施；标准厂房与总装厂房模块化供地。</p></div>
+    <div class="card"><h5>⑤ 人才政策</h5><p style="font-size:13.5px">落户、住房、子女教育与团队资助专项；建立航空、电子信息类职称评定通道。</p></div>
+    <div class="card"><h5>⑥ 资质与合规</h5><p style="font-size:13.5px">支持检测认证平台建设；统一提供适航辅导、保密"三证联办"与两用物项合规辅导。</p></div>
+  </div>
+</section>
+
+<!-- ================= 第十二章 风险合规与社会效益 ================= -->
+<section class="chapter" id="ch12">
+  <h2><span class="num">12</span>风险合规与社会效益</h2>
+  <p class="chapter-lead">风险识别与对策、合规护城河边界，以及项目的社会效益定位。风险表述与测算口径保持一致，不回避公益性财务特征。</p>
+
+  <div class="fig-row three"><figure><img src="images/xiongan_02.jpg" alt="社会效益与城市更新样板：雄安新区新中式地标建筑" loading="lazy"><figcaption>社会效益与城市更新样板：雄安新区新中式地标建筑｜来源：公开资料</figcaption></figure><figure><img src="images/chongli_03.jpg" alt="大型活动低空安防与公共安全场景：崇礼雪如意环形看台与山谷云海" loading="lazy"><figcaption>大型活动低空安防与公共安全场景：崇礼雪如意环形看台与山谷云海｜来源：视觉中国</figcaption></figure><figure><img src="images/swarm_02.jpg" alt="城市级低空公共安全治理场景：千架无人机夜空编队表演" loading="lazy"><figcaption>城市级低空公共安全治理场景：千架无人机夜空编队表演｜来源：公开资料</figcaption></figure></div>
+
+  <h3>12.1 风险识别与对策</h3>
+  <div class="table-scroll">
+<table style="min-width:560px">
+    <colgroup><col style="width:18%"><col style="width:38%"><col style="width:44%"></colgroup>
+    <thead><tr><th style="width:18%">风险类别</th><th style="width:38%">风险表现</th><th style="width:44%">对策</th></tr></thead>
+    <tbody>
+      <tr><td style="width:18%">政策口径风险</td><td style="width:38%">强制配置清单不明、税收返还政策存在退坡可能</td><td style="width:44%">需求依据锚定《反恐怖主义法》第三十一条与国令第 761 号第四十三条；返税协议以地方留成为基数并与招商履约考核挂钩；财务模型同时列示含返税与常态经营双口径，不做减免承诺。</td></tr>
+      <tr><td style="width:18%">市场竞争风险</td><td style="width:38%">传统安防与通信企业向低空领域转型，装备价格竞争加剧</td><td style="width:44%">园区聚焦检测认证、场景运营、平台与数据要素等高附加值环节；以链主龙头订单与供应链对接形成招商锚点，避免陷入单一装备价格战。</td></tr>
+      <tr><td style="width:18%">取证周期风险</td><td style="width:38%">通航/eVTOL 整机 TC、OC 取得周期存在不确定性</td><td style="width:44%">按取证梯队招引企业，园区载体与服务收入不绑定某一型号取证结果；配套企业先行入驻形成现金流。</td></tr>
+      <tr><td style="width:18%">空域审批风险</td><td style="width:38%">试飞场地与空域批复滞后于建设计划</td><td style="width:44%">选址阶段前置协调空域与净空条件；一期先建设标准厂房与可落地平台设施，试飞场按批复节奏推进。</td></tr>
+      <tr><td style="width:18%">招商不及预期</td><td style="width:38%">龙头入驻率低、载体空置、租金回款慢</td><td style="width:44%">政务场景与平台订单托底；按三档分期开发控制投入强度；运营商与基金协议绑定招商完成度对赌。</td></tr>
+      <tr><td style="width:18%">合规经营风险</td><td style="width:38%">两用物项出口、数据分级分类、保密资质边界把握不当</td><td style="width:44%">设立合规辅导服务站；数据本地化存储与分级分类管理；涉两用物项业务对照 2026 年第 49 号公告建立内控制度。</td></tr>
+      <tr><td style="width:18%">财务平衡风险</td><td style="width:38%">A、B 档平台全投资 NPV 在 8% 折现率下为负</td><td style="width:44%">明确平台公益属性与公共基础设施定位，争取专项债、中央预算内与特别国债支持；第 5 年起培育 REITs 退出改善长期现金流；项目评价以税收、就业、产业集聚等社会效益与战略价值为重要维度。</td></tr>
+    </tbody>
+  
+  </table>
+</div>
+
+  <h3>12.2 合规护城河：四条边界</h3>
+  <div class="grid g2">
+    <div class="card"><h5>法律依据边界</h5><p style="font-size:13.5px">项目需求论证仅引用现行公开法律、行政法规与部门规章；不引用查无此文的文件，不使用无文号的"强制清单"表述。</p></div>
+    <div class="card"><h5>产品定位边界</h5><p style="font-size:13.5px">园区产品统一为低空安防、要地防护、民用与公共安全装备、低空运行监管服务；不涉及武器制造工艺、军队部署与作战使用。</p></div>
+    <div class="card"><h5>数据与网络安全</h5><p style="font-size:13.5px">航迹、遥感与位置数据分级分类、本地化存储；平台对接国家 UOM 与省市监管平台，按权限分级开放接口。</p></div>
+    <div class="card"><h5>出口与两用物项</h5><p style="font-size:13.5px">涉两用物项企业建立合规内控流程；军贸内容仅引用公开报道，园区不组织军品交易与军品生产。</p></div>
+  </div>
+
+  <h3>12.3 社会效益</h3>
+  <ul>
+    <li><strong>国家安全与公共安全治理：</strong>完善机场、能源、监所、边检与重大活动等重点目标防护能力，支撑低空安全治理体系现代化，属公共安全装备与服务范畴。</li>
+    <li><strong>就业带动：</strong>三档达产直接就业 3,372 / 11,200 / 36,260 人，上下游带动 8,430 / 28,000 / 90,650 人，为地方留住航空、电子信息与软件技能人才。</li>
+    <li><strong>财政贡献：</strong>十年累计全口径税收 10.44 / 41.76 / 146.16 亿元，地方留成 3.97 / 15.87 / 55.54 亿元；达产亩均税收达到 50 / 60 / 70 万元/亩目标。</li>
+    <li><strong>产业升级与区域协调：</strong>带动复材、电子、软件、检测与现代服务业集聚；中部、西部与东北地区可依托特色场景实现产业换道，缩小区域差距。</li>
+    <li><strong>示范复制价值：</strong>三档标准化产品与"一总部＋多基地＋边防场景验证"网络，可为全国各省提供可复制、可考核、可审计的产业社区样板。</li>
+    <li><strong>新质生产力载体：</strong>对接"人工智能+"行动与新质生产力要求，形成 AI、通航/eVTOL、商业航天与低空安全融合的产业试验场。</li>
+  </ul>
+</section>
+
+<!-- ================= 附录 ================= -->
+<!-- ================= 第十三章 多媒体·影像资料 ================= -->
+<section class="chapter" id="chmedia">
+  <h2><span class="num">13</span>多媒体·影像资料</h2>
+  <p class="chapter-lead">园区概念宣传片、精选影像画廊与图片来源汇总。视频与图片均为民用低空安防 / 要地防护 / 民用与公共安全装备口径，不含军事部署与作战画面。</p>
+
+  <h3>13.1 园区概念宣传片（15 秒，720p）</h3>
+  <div class="video-box">
+    <video controls preload="none" width="100%" style="max-width:1280px;display:block;margin:0 auto;background:#000;">
+      <source src="media/park_showreel.mp4" type="video/mp4">
+      <source src="https://aka.doubaocdn.com/s/aIsmXOW8VZ" type="video/mp4">
+      您的浏览器不支持 HTML5 视频播放。可访问备用链接观看：
+      <a href="https://aka.doubaocdn.com/s/aIsmXOW8VZ">园区概念宣传片（15 秒，720p MP4，备用链接，不保证长期有效）</a>
+    </video>
+  </div>
+  <p class="video-note">画面内容：现代化研发楼群航拍、民用工业无人机编队、eVTOL 电动垂直起降飞行器在园区起降平台起降、屋顶球形光电监测与民用通信雷达天线；无文字水印、无军事内容。主源为本地文件 <code>media/park_showreel.mp4</code>，云端短链仅作临时备用。</p>
+
+  <h3>13.2 精选影像画廊</h3>
+  <div class="gallery">
+    <figure><img src="images/radar_02.jpg" alt="楼顶 360 度低空探测雷达" loading="lazy"><figcaption>楼顶 360° 低空无人机探测雷达｜来源：公开产品资料</figcaption></figure>
+    <figure><img src="images/cuas_02.jpg" alt="楼顶固定式无人机反制设备" loading="lazy"><figcaption>固定式无人机反制设备楼顶部署（民用口径）｜来源：厂商公开资料</figcaption></figure>
+    <figure><img src="images/sat_ground_02.jpg" alt="大型 C/Ku 频段卫星通信地面站天线" loading="lazy"><figcaption>大型 C/Ku 频段卫星通信地面站天线｜来源：公开图库</figcaption></figure>
+    <figure><img src="images/propeller_03.jpg" alt="航空螺旋桨系列展品" loading="lazy"><figcaption>航空螺旋桨系列展品（园区配套产业链）｜来源：公开报道</figcaption></figure>
+    <figure><img src="images/xiongan_03.jpg" alt="雄安商务服务中心建筑群" loading="lazy"><figcaption>雄安商务服务中心建筑群与城市天际线｜来源：视觉中国</figcaption></figure>
+    <figure><img src="images/sjzairport_02.jpg" alt="石家庄正定国际机场 T2 航站楼" loading="lazy"><figcaption>石家庄正定国际机场 T2 国内航站楼全景｜来源：公开资料</figcaption></figure>
+    <figure><img src="images/tangshan_03.jpg" alt="唐山港集装箱堆场航拍" loading="lazy"><figcaption>唐山港京唐港区集装箱堆场航拍｜来源：河北日报</figcaption></figure>
+    <figure><img src="images/swarm_03.jpg" alt="古塔上空无人机编队表演" loading="lazy"><figcaption>古塔上空无人机编队表演（城市公共活动场景）｜来源：公开图库</figcaption></figure>
+  </div>
+
+  <h3>13.3 图片与视频来源汇总</h3>
+  <p>本章及各章配图共 47 张，均来自公开新闻报道、政府发布、厂商公开产品资料与公开图库；引用仅用于产业经济分析与招商论证说明。主要来源域名汇总如下：</p>
+  <ul class="src-list">
+    <li>视觉中国（vcg.com）：雄安站航拍、雪如意系列、雄安商务服务中心等。</li>
+    <li>人民网 / 河北日报 / 经济参考报：唐山港集装箱码头、朱雀二号发射场等。</li>
+    <li>新华社 / 澎湃新闻 / 长沙晚报 / 合肥日报 / 凤凰网：赣州低空经济产业园、徐汇滨江无人机编队、星城天眸机巢、EH216-S 编队、中捷通用机场、朱雀二号遥七发射等。</li>
+    <li>新浪财经 / 搜狐 / 太平洋科技 / 河北经济网：输电塔机巢部署、唐山港智慧码头、EH216-S 飞行、栾城通用机场、朱雀二号总装等。</li>
+    <li>厂商公开产品资料：低空监视雷达、频谱侦测、固定式反制设备、侦测干扰一体化系统、大疆机场等民用低空安防装备。</li>
+    <li>视频：AI 文生视频生成（15 秒 720p MP4），园区概念宣传片，无第三方版权主张；云端备用短链为临时链接，不保证长期有效。</li>
+  </ul>
+  <p class="video-note">说明：全部图片与视频均以相对路径引用（<code>images/</code>、<code>media/</code>），随本 HTML 目录整体分发；单张图片未加载时以 alt 文本占位，不影响正文阅读。</p>
+</section>
+
+<section class="chapter" id="appendix">
+  <h2><span class="num">附</span>资料来源、财务假设与术语说明</h2>
+  <p class="chapter-lead">下列来源为正文政策、市场、招标与案例数据的引用依据；媒体测算与机构预测口径已在对应章节标注。来源按类别分组，合计 90 余条。</p>
+
+  <h3>A. 法律法规、政策文件与官方发布</h3>
+  <ol class="src-list">
+    <li>《无人驾驶航空器飞行管理暂行条例》（国务院、中央军委令第 761 号）：<a href="https://www.gov.cn/zhengce/zhengceku/202306/content_6888800.htm">gov.cn</a>；民航局文本 PDF：<a href="https://app.caac.gov.cn/XXGK/XXGK/FLFG/202401/P020240115348470011000.pdf">caac.gov.cn</a></li>
+    <li>《中华人民共和国治安管理处罚法》（2025 年修订，主席令第四十九号）：<a href="http://www.npc.gov.cn/npc/c1773/c1848/c21114/myhkfxd/myhkfxd002/202512/t20251229_450824.html">npc.gov.cn</a></li>
+    <li>2023 年中央经济工作会议（首提低空经济）：<a href="https://www.gov.cn/yaowen/liebiao/202312/content_6919834.htm">gov.cn</a></li>
+    <li>2025 年《政府工作报告》：<a href="https://www.gov.cn/yaowen/liebiao/202503/content_7013163.htm">gov.cn</a></li>
+    <li>2026 年《政府工作报告》：<a href="https://www.gov.cn/yaowen/liebiao/202603/content_7062625.htm">gov.cn</a></li>
+    <li>二十届四中全会《中共中央关于制定国民经济和社会发展第十五个五年规划的建议》：<a href="https://www.gov.cn/zhengce/202510/content_7046052.htm">gov.cn</a></li>
+    <li>《国务院关于深入实施"人工智能+"行动的意见》（国发〔2025〕11 号）：<a href="https://www.gov.cn/zhengce/content/202508/content_7037861.htm">gov.cn</a>；政策解读：<a href="https://www.gov.cn/zhengce/202508/content_7037899.htm">gov.cn</a></li>
+    <li>《低空经济及其核心产业统计分类（试行）》（发改低空〔2025〕1676 号）：<a href="https://www.gov.cn/zhengce/zhengceku/202512/content_7052866.htm">gov.cn</a>；发改委答记者问：<a href="https://www.ndrc.gov.cn/xxgk/jd/jd/202512/t20251226_1402661_ext.html">ndrc.gov.cn</a></li>
+    <li>国家发展改革委低空经济发展司机构设置：<a href="https://www.ndrc.gov.cn/fzggw/jgsj/dks/sjzc/202412/t20241227_1395295_ext.html">ndrc.gov.cn</a></li>
+    <li>《通用航空装备创新应用实施方案（2024—2030 年）》四部门联合印发：<a href="https://www.gov.cn/zhengce/zhengceku/202403/P020240328724691408759.pdf">gov.cn PDF</a></li>
+    <li>民航局《关于印发〈促进通用航空空中游览和跳伞发展暂行管理办法〉的通知》：<a href="http://www.caac.gov.cn/PHONE/XWZX/MHYW/202509/t20250919_228672.html">caac.gov.cn</a></li>
+    <li>中共中央、国务院《关于发展新质生产力的意见》（2026-10-09，新华社）：<a href="http://www.xinhuanet.com/politics/zywj/20261009/f4bdabfe2bfa489fbeaf6d57bac21c22/c.html">xinhuanet.com</a></li>
+    <li>商务部、海关总署、中央军委装备发展部 2026 年第 49 号公告（两用物项）：<a href="http://www.mofcom.gov.cn/zwgk/zcfb/art/2026/art_f71c27f81b8f4097b876818abbd19851.html">mofcom.gov.cn</a>；海关总署转载：<a href="http://www.customs.gov.cn/customs/2026-10/19/article_2026101916351914243.html">customs.gov.cn</a></li>
+    <li>《国务院办公厅关于优化完善地方政府专项债券管理机制的意见》（国办发〔2024〕52 号）：<a href="https://www.gov.cn/zhengce/content/202412/content_6994502.htm">gov.cn</a></li>
+  </ol>
+
+  <h3>B. 统计公报、官方数据与行业公开资料</h3>
+  <ol class="src-list" start="15">
+    <li>2025 年民航行业发展统计公报：<a href="http://www.caac.gov.cn/XWZX/MHYW/202604/t20260417_230603.html">caac.gov.cn</a>；公报评读 PDF：<a href="http://www.caac.gov.cn/XXGK/XXGK/ZCJD/202604/P020260417666939833111.pdf">caac.gov.cn PDF</a></li>
+    <li>新华网：2025 年注册无人机 328.7 万架、飞行 4,530.29 万小时：<a href="http://www.xinhuanet.com/20260420/6f1d4a122a9344138378f33c1b38781d/c.html">xinhuanet.com</a></li>
+    <li>国新办发布会：2023 年低空经济超 5,000 亿元、2030 年有望达 2 万亿元：<a href="https://www.gov.cn/lianbo/bumen/202402/content_6934828.htm">gov.cn</a></li>
+    <li>国家发改委专家解读：2023 年规模 5,059.5 亿元（赛迪口径）：<a href="https://www.ndrc.gov.cn/wsdwhfz/202411/t20241129_1394729_ext.html">ndrc.gov.cn</a></li>
+    <li>新华网年终报道：2025 年约 1.5 万亿元、2035 年 3.5 万亿元预测：<a href="http://www.news.cn/20251231/24fe4ac52fc04a2e8fe8ee863e03191d/c.html">news.cn</a></li>
+    <li>民政部《2024 年民政事业发展统计公报》（专用设备制造 2,776 家、规上收入 4,547.4 亿元，安全防范相关）：<a href="https://www.mca.gov.cn/n156/n2679/c1662004999980013510/attr/468811.pdf">mca.gov.cn PDF</a></li>
+    <li>国家航天局转引赛迪研究院：2025 年商业航天核心产业 1.01 万亿元：<a href="https://www.cnsa.gov.cn/n6758823/n6758844/n10740300/n10740343/c10741917/content.html">cnsa.gov.cn</a></li>
+    <li>工业和信息化部无线电管理局工作动态（千帆星座 256 颗，2026-09-16）：<a href="https://www.miit.gov.cn/jgsj/wgj/gzdt/index.html">miit.gov.cn</a></li>
+    <li>广州花都综合保障基地一期项目批复：<a href="https://www.huadu.gov.cn/sdlyjczwgk/zdjsxmly/content/post_10472583.html">huadu.gov.cn</a></li>
+    <li>新华网：2026 年政府投资安排（超长期特别国债 1.3 万亿、专项债 4.4 万亿、中央预算内 7,550 亿元）：<a href="https://www.news.cn/politics/20260314/8a1a2abb34a34da195c86ee6fdf2e8c7/c.html">news.cn</a></li>
+    <li>36 氪转载"低空 Future"研究院：国内市场宽口径序列与价格带调研：<a href="https://m.36kr.com/p/3826043342413831">36kr.com</a></li>
+  </ol>
+
+  <h3>C. 国际市场研究机构与企业公开披露</h3>
+  <ol class="src-list" start="26">
+    <li>Grand View Research：Anti-Drone Market：<a href="https://www.grandviewresearch.com/industry-analysis/anti-drone-market">grandviewresearch.com</a></li>
+    <li>MarkNtel Advisors：Counter-UAS System Market：<a href="https://www.marknteladvisors.com/research-library/counter-unmanned-aerial-system-market.html">marknteladvisors.com</a></li>
+    <li>Straits Research：Anti-Drone Market：<a href="https://straitsresearch.com/report/anti-drone-market">straitsresearch.com</a></li>
+    <li>MarketsandMarkets：Anti-Drone Market（全球窄口径）：<a href="https://www.marketsandmarkets.com/Market-Reports/anti-drone-market-177013645.html">marketsandmarkets.com</a></li>
+    <li>MarketsandMarkets：China Counter-CUAS Systems Market：<a href="https://www.marketsandmarkets.com/Market-Reports/geography/counter-cuas-systems-market/china">marketsandmarkets.com</a></li>
+    <li>Fortune Business Insights：Anti-Drone Market Report 103402：<a href="https://www.fortunebusinessinsights.com/anti-drone-market-report-103402">fortunebusinessinsights.com</a></li>
+    <li>ResearchIntelo：Anti-Drone Market Report：<a href="https://www.researchintelo.com/report/anti-drone-market-report">researchintelo.com</a></li>
+    <li>Arizton：Counter-Drone Systems Market Report：<a href="https://www.arizton.com/store/counter-drone-systems-market-report">arizton.com</a></li>
+    <li>Market Research Future：Anti-Drone Market 177397：<a href="https://www.marketresearchfuture.com/reports/anti-drone-market-177397">marketresearchfuture.com</a></li>
+    <li>DroneShield FY2025 Annual Report（A$216.5m，pipeline 与订单口径区分）：<a href="https://static1.squarespace.com/static/660a32624c94dd36e509baf3/t/699e24e4f98a584c8e3b75e2/1771971818271/FY2025+DRO+Annual+Report.pdf">drone-shield.com PDF</a>；AGM 投资者演示：<a href="https://static1.squarespace.com/static/660a32624c94dd36e509baf3/t/6a18d4da8388586b12e78b15/1780012250798/AGM_InvestorPresentation_May2026.pdf">drone-shield.com PDF</a></li>
+    <li>Anduril Series H 融资公告（媒体口径收入与估值仅作参照）：<a href="https://www.anduril.com/news/anduril-announces-usd5b-series-h-raise">anduril.com</a></li>
+    <li>Dedrone 企业档案：<a href="https://droneintelligence.ai/companies/dedrone">droneintelligence.ai</a>；Axon 收购 Dedrone 公告：<a href="https://www.axon.com/newsroom/announcements/frost-sullivan-dedrone-by-axon">axon.com</a></li>
+    <li>Fortem 技术综述（挪威空防协会转载，含美制装备谱系公开资料）：<a href="https://norskluftvern.com/2026/03/23/soft-kill-non-kinetic-counter-drone-systems/">norskluftvern.com</a></li>
+  </ol>
+
+  <h3>D. 招标采购实证公告（政府采购网与公共资源交易平台）</h3>
+  <ol class="src-list" start="39">
+    <li>西安市公安局低空安防装备采购 668.32 万元：<a href="http://www.ccgp.gov.cn/cggg/zygg/zbgg/202510/t20251010_25680633.htm">ccgp.gov.cn</a></li>
+    <li>文山州公安局无人机反制设备 225.00 万元：<a href="http://www.ccgp.gov.cn/cggg/dfgg/zbgg/202503/t20250313_24055379.htm">ccgp.gov.cn</a></li>
+    <li>毕节市公安局无人机反制设备采购 138.20 万元：<a href="http://www.ccgp.gov.cn/cggg/dfgg/zbgg/202511/t20251125_25962237.htm">ccgp.gov.cn</a></li>
+    <li>北京大兴公安分局无人机侦测反制设备 350.00 万元：<a href="http://www.ccgp.gov.cn/cggg/zygg/zbgg/202603/t20260303_26419222.htm">ccgp.gov.cn</a></li>
+    <li>北京通州公安分局无人机反制设备 152.00 万元：<a href="http://www.ccgp.gov.cn/cggg/zygg/zbgg/202609/t20260917_27329988.htm">ccgp.gov.cn</a></li>
+    <li>安徽省机场公安局无人机反制设备 247.61 万元：<a href="http://www.ccgp.gov.cn/cggg/dfgg/zbgg/202510/t20251012_25694878.htm">ccgp.gov.cn</a></li>
+    <li>甘肃省机场公安局无人机反制设备 96.00 万元：<a href="http://www.ccgp.gov.cn/cggg/dfgg/zbgg/202512/t20251217_26110839.htm">ccgp.gov.cn</a></li>
+    <li>太原武宿机场驱鸟＋探鸟＋反制组合包 1,959.72 万元：<a href="https://www.sxairport.org.cn/news/notice/detail/57742.html">sxairport.org.cn</a></li>
+    <li>上海监狱管理局无人机反制设备 129.60 万元：<a href="http://www.ccgp.gov.cn/cggg/zygg/zbgg/202509/t20250903_25558309.htm">ccgp.gov.cn</a></li>
+    <li>宁夏监狱管理局无人机反制设备 365.00 万元：<a href="http://www.ccgp.gov.cn/cggg/dfgg/zbgg/202512/t20251217_26110772.htm">ccgp.gov.cn</a></li>
+    <li>山西石楼看守所无人机反制设备 79.28 万元：<a href="http://www.ccgp.gov.cn/cggg/dfgg/zbgg/202506/t20250618_24800399.htm">ccgp.gov.cn</a></li>
+    <li>国家核安保技术中心无人机反制设备 118.00 万元：<a href="http://www.ccgp.gov.cn/cggg/zygg/zbgg/202607/t20260706_27101374.htm">ccgp.gov.cn</a></li>
+    <li>深圳重大活动安保低空安防租赁 548.66 万元：<a href="https://www.szdhit.com/Zhaobiao-detail-id-13882.html">szdhit.com</a>；招标公告：<a href="http://www.ccgp.gov.cn/cggg/dfgg/gkzb/202509/t20250930_25458516.htm">ccgp.gov.cn</a></li>
+    <li>内蒙古包头边检总站无人机侦测反制系统 48.65 万元：<a href="http://www.ccgp.gov.cn/cggg/zygg/zbgg/202506/t20250611_24759999.htm">ccgp.gov.cn</a></li>
+    <li>合肥市低空经济基础设施项目（一期）1.4541 亿元：<a href="https://www.ahtba.org.cn/site/trade/affiche/detail/258239af-d962-11f0-b7f6-00163e1f3e9b">ahtba.org.cn</a></li>
+    <li>汉中市低空经济数字化基础设施及配套场景建设项目 2.95 亿元：<a href="http://www.hanzhong.gov.cn/hzszf/xwzx/shxw/202511/8d6ece5f1e5c46c8b8e66622451a1ab7.shtml">hanzhong.gov.cn</a></li>
+    <li>宿迁宿城区低空全域智慧运营体系 1.4888 亿元（新浪财经转载公告）：<a href="https://finance.sina.com.cn/stock/aigc/zdht/2026-09-24/doc-inisxnuz4991188.shtml">sina.com.cn</a></li>
+    <li>山东省低空智能网联系统平台开发项目 4,505 万元：<a href="http://www.ccgp.gov.cn/cggg/dfgg/zbgg/202610/t20261007_27439735.htm">ccgp.gov.cn</a></li>
+    <li>山东省公安厅民用无人驾驶航空器管控与实战一体化平台 1,205.30 万元：<a href="http://www.ccgp.gov.cn/cggg/dfgg/zbgg/202607/t20260729_27035334.htm">ccgp.gov.cn</a></li>
+    <li>泸水市城市空地一体化低空治理综合体 1,749.80 万元：<a href="http://www.ccgp.gov.cn/cggg/dfgg/zbgg/202603/t20260329_26331201.htm">ccgp.gov.cn</a></li>
+    <li>辉县市一网统飞平台 1,503.19 万元：<a href="https://www.sxafz.com/news/zhengzhou_767.html">sxafz.com</a></li>
+    <li>青海省无线电监测站无人机反制与监管平台 468.80 万元：<a href="http://www.ccgp.gov.cn/cggg/dfgg/zbgg/202507/t20250718_24995750.htm">ccgp.gov.cn</a></li>
+    <li>军队采购网公开公告入口（仅引用公开事实）：<a href="https://www.plap.mil.cn/">plap.mil.cn</a>；公开项目编号 2025-JLSXJN-W3005：<a href="https://www.plap.mil.cn/freecms/site/juncai/ggxx/info/2025/dc618e25e21743008e3e8738f1221263.html">plap.mil.cn</a></li>
+  </ol>
+
+  <h3>E. 地方政策、园区、基金与金融工具案例</h3>
+  <ol class="src-list" start="62">
+    <li>广东省低空经济发展行动方案：<a href="http://drc.gd.gov.cn/qtwj/content/mpost_4428391.html">drc.gd.gov.cn</a></li>
+    <li>深圳市基础设施建设实施方案：<a href="https://www.sz.gov.cn/cn/xxgk/zfxxgj/gqdt/content/post_11870430.html">sz.gov.cn</a></li>
+    <li>广州市低空经济高质量发展总体方案：<a href="https://www.gz.gov.cn/zt/gzlfzgzld/gzgzlfz/content/post_10170461.html">gz.gov.cn</a></li>
+    <li>安徽省"低空+"产业发展行动计划：<a href="https://www.ah.gov.cn/szf/zfgb/565542291.html">ah.gov.cn</a></li>
+    <li>合肥市促进低空经济发展若干政策（PDF）：<a href="https://www.hefei.gov.cn/group1/M00/89/0E/wKgEHmdjx_SAUhJvAAR-ql_Uj0s495.pdf">hefei.gov.cn PDF</a></li>
+    <li>四川省人大代表建议办理答复（低空产业政策）：<a href="https://www.sc.gov.cn/10462/11689/11698/11703/2025/8/26/eed62f4591394f1e8268817b20a9cd2e.shtml">sc.gov.cn</a></li>
+    <li>中新网：湖南低空经济 2026 年上半年运行数据：<a href="http://www.chinanews.com.cn/cj/2026/08-28/10686026.shtml">chinanews.com.cn</a></li>
+    <li>陕西省低空经济发展行动计划（PDF）：<a href="https://sndrc.shaanxi.gov.cn/zfxxgk/zc/fgwj/sfzggwwj/2024/202410/P020241212635242321363.pdf">shaanxi.gov.cn PDF</a></li>
+    <li>南京市低空经济发展实施方案：<a href="http://www.nanjing.gov.cn/zt/njdzdkjjcygd/dkyw/202604/t20260408_5819929.html">nanjing.gov.cn</a></li>
+    <li>苏州市低空经济发展实施方案：<a href="https://sst.suzhou.gov.cn/ndaservplat/Apps/psp/index.php?s=%2FHome%2FEpAppPolicySearch%2Fpolicydetail%2Fid%2F112254">suzhou.gov.cn</a></li>
+    <li>无锡市低空经济发展实施方案：<a href="https://www.wuxi.gov.cn/doc/2024/04/17/4293319.shtml">wuxi.gov.cn</a></li>
+    <li>湖北省低空经济发展实施方案：<a href="https://fgw.hubei.gov.cn/fbjd/zc/gfwj/gf/202408/t20240806_5293686.shtml">hubei.gov.cn</a></li>
+    <li>成都市政府投资环境专栏：<a href="https://www.chengdu.gov.cn/cdsrmzf/c181976/tzcd.shtml">chengdu.gov.cn</a></li>
+    <li>重庆市设立 20 亿元空天低空产业基金：<a href="http://www.cq.gov.cn/zwgk/zfxxgkml/zdlyxxgk/kj/kjzx/202603/t20260319_15551134.html">cq.gov.cn</a></li>
+    <li>湖南省基金矩阵（30+10+5+5 亿元）：<a href="https://gxt.hunan.gov.cn/xxgk_71033/jyta/rd/202606/t20260625_34011889.html">hunan.gov.cn</a></li>
+    <li>广州花都区空天产业基金（认缴 4.5 亿、首期 1 亿）：<a href="https://www.huadu.gov.cn/xxgk/yata/content/mpost_10979702.html">huadu.gov.cn</a></li>
+    <li>南宁市 10 亿元创新生产力基金：<a href="https://tzcjj.nanning.gov.cn/zwdt_tpxw/tpxw/t6465983.html">nanning.gov.cn</a></li>
+    <li>合肥市 200 亿元引导母基金与 100 亿元未来产业基金（PDF）：<a href="https://www.hefei.gov.cn/group1/M00/8A/B5/wKgEHmd8fgKAfZU-AAQUqe5p6Ic586.pdf">hefei.gov.cn PDF</a></li>
+    <li>人民网：自贡低空经济专项债 4.94 亿元：<a href="https://finance.people.com.cn/n1/2025/0407/c1004-40454315.html">people.com.cn</a></li>
+    <li>济南临空评测中心专项债 2025 年 4,000 万元（利率 1.99%）：<a href="http://www.licheng.gov.cn/gongkai/site_lichengquqczji/channel_63899cdf3759918282629f3c/doc_6a55a7207be5567e6d228aa5.html">licheng.gov.cn</a></li>
+    <li>汤阴县储备航空类项目 14 个、总投资 60.8 亿元：<a href="http://www.tangyin.gov.cn/2026/06-30/3650292.html">tangyin.gov.cn</a></li>
+    <li>中金联东民营产业园首单 REIT（508003）路演材料：<a href="https://roadshow.sseinfo.com/activityDetails/38844">sseinfo.com</a></li>
+    <li>易方达广州开发区产业园 REIT 产品资料：<a href="https://www.efunds.com.cn/fund/180105_org.shtml">efunds.com.cn</a></li>
+    <li>广州花都产业园 9.7 亿元项目进展：<a href="https://www.huadu.gov.cn/xxgk/zdxm/content/mpost_10767423.html">huadu.gov.cn</a></li>
+    <li>长春高寒试验场 5 亿元项目：<a href="https://xxgk.jl.gov.cn/zcbm/fgw/xxgkmlqy/202607/t20260707_9661409.html">jl.gov.cn</a></li>
+    <li>吉林航空实训基地 6,500 万元项目：<a href="https://www.jl.gov.cn/szfzt/tzcj/zdxm/dkjj/202604/t20260421_3625549.html">jl.gov.cn</a></li>
+    <li>芜湖航空产业基地 2025 年产值 350 亿元：<a href="https://www.wuhu.gov.cn/xwzx/zwyw/40535749.html">wuhu.gov.cn</a></li>
+    <li>新华网：十五运会低空安保点位与保障情况：<a href="http://www.news.cn/info/20251124/762cacd7252341b79640ca6beb74f029/c.html">news.cn</a></li>
+  </ol>
+
+  <h3>F. 财务假设摘要（冻结口径，03 号文件）</h3>
+  <ul>
+    <li>计算期 10 年（Y1—Y10），折现率 8%，现金流按年末发生；企业所得税 25%，亏损向后结转（模型期内按累计余额简化处理）。</li>
+    <li>平台公司静态投资仅含土地一级开发、基础设施、标准载体与公共平台设备；入园企业固投、税费与就业独立测算，不计入平台公司收入成本。</li>
+    <li>六收入曲线成熟期占比：载体租售 35%—45%、产业服务 15%—20%、平台运营与数据 15%—20%、产业投资收益 10%—20%、配套运营 5%—10%、税收增量返还 5%—10%。</li>
+    <li>资金来源：财政 10%、专项债 25%（2.5%、15 年）、银行贷款 40%（4.0%、10—12 年）、产业基金 20%、自筹 5%；资本金比例 35%。</li>
+    <li>平台累计税收返还 = 地方留成 × 35%；不与国家级开发区"地均税收"口径混用；A/B 档动态回收期计算期内未回收。</li>
+    <li>就业口径：产业厂房 12 人/千㎡、研发载体 18 人/千㎡，上下游带动按 1:2.5 测算。</li>
+  </ul>
+
+  <h3>G. 术语表</h3>
+  <div class="table-scroll">
+<table style="min-width:480px">
+    <colgroup><col style="width:22%"><col style="width:78%"></colgroup>
+    <tbody>
+      <tr><td style="width:22%">UTM</td><td style="width:78%">Unmanned Aircraft System Traffic Management，无人机交通管理（低空智联网平台）。</td></tr>
+      <tr><td style="width:22%">UOM</td><td style="width:78%">国家无人驾驶航空器一体化综合监管服务平台。</td></tr>
+      <tr><td style="width:22%">eVTOL</td><td style="width:78%">电动垂直起降航空器。</td></tr>
+      <tr><td style="width:22%">TC / OC</td><td style="width:78%">型号合格证 / 生产许可证（民航适航概念）。</td></tr>
+      <tr><td style="width:22%">EMC</td><td style="width:78%">电磁兼容试验。</td></tr>
+      <tr><td style="width:22%">TDOA</td><td style="width:78%">到达时间差定位，无线电频谱侦测定位方法。</td></tr>
+      <tr><td style="width:22%">PNT</td><td style="width:78%">定位、导航与授时（Positioning, Navigation, Timing）。</td></tr>
+      <tr><td style="width:22%">REITs / Pre-REITs</td><td style="width:78%">基础设施不动产投资信托基金 / 资产证券化前培育阶段。</td></tr>
+      <tr><td style="width:22%">AIC</td><td style="width:78%">产业投资公司（Artificial Intelligence Industry Capital 类平台性投资机构）。</td></tr>
+    </tbody>
+  
+  </table>
+</div>
+
+  <h3>免责声明</h3>
+  <p class="chapter-lead">本计划书为项目筹备阶段内部汇报材料，所有财务测算基于 03 号文件冻结假设与 04 号结果文件，不构成投资承诺、招商要约或最终可研结论；机构预测与媒体测算数据均已标注口径，不代表项目实际收益。涉及企业名单为招商目标库，企业经营状态以工商登记与公开披露为准。涉密事项不在本件讨论范围，对外发布前须经保密与合规审查。</p>
+</section>
+
+
+</div><!-- /.wrap -->
+
+<button id="toTop" title="回到顶部" aria-label="回到顶部">↑</button>
+<footer class="foot">
+  <div>AI+空天防务产业园项目商业计划书 · 省级可复制落地方案 · 内部资料 · 2026年10月</div>
+  <div>项目筹备组（拟）　基准日期 2026 年 10 月 22 日　本件仅供党政机关内部汇报使用</div>
+</footer>
+
+</div><!-- /.main -->
+
+<script src="js/echarts.min.js"></script>
+<script>
+/* ============ 全局色板与公共配置 ============ */
+var PAL = { blue:'#0E4DA4', blue2:'#5B8DD9', blue3:'#9DBEEB', red:'#C8102E', gray:'#8A97A8', gold:'#C9A24B', dark:'#16243D', line:'#DCE3EE', soft:'#EEF2F8' };
+var CHARTS = [];
+function baseOpt(extra){
+  var o = {
+    color:[PAL.blue, PAL.blue2, PAL.blue3, PAL.gold, PAL.gray, PAL.red],
+    textStyle:{ fontFamily:'Microsoft YaHei, 微软雅黑, sans-serif', color:PAL.dark },
+    grid:{ left:110, right:28, top:42, bottom:44, containLabel:true },
+    tooltip:{ trigger:'axis', axisPointer:{ type:'shadow' }, confine:true, textStyle:{ fontSize:13 } },
+    xAxis:{ axisLine:{ lineStyle:{ color:PAL.line } }, axisLabel:{ color:PAL.gray }, splitLine:{ lineStyle:{ color:PAL.soft } } },
+    yAxis:{ axisLine:{ show:false }, axisLabel:{ color:PAL.dark }, splitLine:{ lineStyle:{ color:PAL.soft } } }
+  };
+  if(extra){ for(var k in extra){ o[k]=extra[k]; } }
+  return o;
+}
+function make(id, option){
+  var el = document.getElementById(id);
+  if(!el || typeof echarts === 'undefined'){ return null; }
+  var c = echarts.init(el);
+  c.setOption(option);
+  CHARTS.push(c);
+  return c;
+}
+var fmt2 = function(v){ return Number(v).toFixed(2); };
+
+/* ============ 图4-1 全球反无人机市场口径对比 ============ */
+make('chart-global', baseOpt({
+  grid:{ left:190, right:40, top:20, bottom:36 },
+  tooltip:{ trigger:'axis', axisPointer:{ type:'shadow' }, confine:true },
+  xAxis:{ type:'value', name:'亿美元(2025)', nameTextStyle:{ color:PAL.gray }, axisLine:{ lineStyle:{ color:PAL.line } }, axisLabel:{ color:PAL.gray }, splitLine:{ lineStyle:{ color:PAL.soft } } },
+  yAxis:{ type:'category', data:['Straits Research(宽口径)','MarkNtel Advisors(宽口径)','MarketsandMarkets(全球)','Grand View Research','Fortune Business Insights'], axisLine:{ show:false }, axisLabel:{ color:PAL.dark, fontSize:12 } },
+  series:[{
+    type:'bar', barWidth:20,
+    data:[
+      { value:74.0, itemStyle:{ color:PAL.blue } },
+      { value:51.2, itemStyle:{ color:PAL.blue2 } },
+      { value:44.8, itemStyle:{ color:PAL.blue2 } },
+      { value:31.8, itemStyle:{ color:PAL.blue3 } },
+      { value:31.1, itemStyle:{ color:PAL.blue3 } }
+    ],
+    label:{ show:true, position:'right', color:PAL.dark, formatter:'{c} 亿美元' }
+  }]
+}));
+
+/* ============ 图4-2 中国市场区间 ============ */
+make('chart-china', baseOpt({
+  tooltip:{ trigger:'axis', confine:true, formatter:function(p){
+    var d = p[0].data; return d.year + ' 年<br/>区间：' + d.low + ' — ' + d.high + ' 亿元' + (d.note ? '<br/>' + d.note : '');
+  }},
+  xAxis:{ type:'category', data:['2024','2025','2026','2030'], axisLabel:{ color:PAL.dark } },
+  yAxis:{ type:'value', name:'亿元', nameTextStyle:{ color:PAL.gray } },
+  series:[
+    { name:'base', type:'bar', stack:'rng', itemStyle:{ color:'transparent' }, emphasis:{ itemStyle:{ color:'transparent' } }, silent:true,
+      data:[
+        { value:0, year:'2024', low:0, high:30 },
+        { value:42.5, year:'2025', low:42.5, high:85 },
+        { value:85, year:'2026', low:85, high:150 },
+        { value:0, year:'2030', low:0, high:100.6, note:'M&M 窄口径点值' }
+      ] },
+    { name:'区间', type:'bar', stack:'rng', barWidth:34, itemStyle:{ color:PAL.blue2, borderRadius:[4,4,0,0] },
+      label:{ show:true, position:'top', color:PAL.dark, formatter:function(p){ return p.data.high + (p.data.year==='2030'?'（窄口径）':''); } },
+      data:[
+        { value:30, year:'2024', high:30 },
+        { value:42.5, year:'2025', high:85 },
+        { value:65, year:'2026', high:150 },
+        { value:100.6, year:'2030', high:100.6 }
+      ] }
+  ]
+}));
+
+/* ============ 图4-3 低空经济 ============ */
+make('chart-lowalt', baseOpt({
+  tooltip:{ trigger:'axis', confine:true, formatter:function(p){ var d=p[0]; var tag = d.dataIndex===0 ? '2023 年实际值（赛迪口径）' : '民航局预测口径'; return d.name + ' 年<br/>' + d.value + ' 亿元<br/>' + tag; }},
+  xAxis:{ type:'category', data:['2023','2025','2030','2035'], axisLabel:{ color:PAL.dark } },
+  yAxis:{ type:'value', name:'亿元', nameTextStyle:{ color:PAL.gray } },
+  series:[{ type:'bar', barWidth:38,
+    data:[
+      { value:5059.5, itemStyle:{ color:PAL.blue } },
+      { value:15000, itemStyle:{ color:PAL.blue3 } },
+      { value:20000, itemStyle:{ color:PAL.blue3 } },
+      { value:35000, itemStyle:{ color:PAL.blue3 } }
+    ],
+    label:{ show:true, position:'top', color:PAL.dark, formatter:'{c} 亿元' }
+  }]
+}));
+
+/* ============ 图4-4 空天信息三板块 ============ */
+make('chart-space', baseOpt({
+  tooltip:{ trigger:'axis', confine:true, formatter:function(p){ var d=p[0]; return d.name + '<br/>' + d.value + ' 亿元<br/>口径独立，不与其他板块相加'; }},
+  xAxis:{ type:'category', data:['北斗时空产业','商业航天核心产业','地理信息产业'], axisLabel:{ color:PAL.dark, interval:0, fontSize:11, rotate:12, margin:10 } },
+  yAxis:{ type:'value', name:'亿元', nameTextStyle:{ color:PAL.gray } },
+  series:[{ type:'bar', barWidth:44,
+    data:[
+      { value:13323, itemStyle:{ color:PAL.blue } },
+      { value:10100, itemStyle:{ color:PAL.blue2 } },
+      { value:9005, itemStyle:{ color:PAL.blue3 } }
+    ],
+    label:{ show:true, position:'top', color:PAL.dark, formatter:'{c} 亿元' }
+  }]
+}));
+
+/* ============ 图5-1 金额区间分布 ============ */
+var binRanges = ['≤50 万元','50—100 万元','100—250 万元','250—500 万元','＞500 万元'];
+make('chart-bins', baseOpt({
+  tooltip:{ trigger:'axis', confine:true, formatter:function(p){ var d=p[0]; return binRanges[d.dataIndex] + '<br/>成交样本：' + d.value + ' 条'; } },
+  xAxis:{ type:'category', data:['≤50','50–100','100–250','250–500','＞500'], axisLabel:{ color:PAL.dark, interval:0, fontSize:11, margin:10 } },
+  yAxis:{ type:'value', name:'条数', nameTextStyle:{ color:PAL.gray } },
+  series:[{ type:'bar', barWidth:36, data:[15,7,21,8,3], itemStyle:{ color:PAL.blue }, label:{ show:true, position:'top', color:PAL.dark } }]
+}));
+
+/* ============ 图5-2 分行业金额 ============ */
+make('chart-ind-amt', baseOpt({
+  grid:{ left:170, right:56, top:20, bottom:36 },
+  tooltip:{ trigger:'axis', axisPointer:{ type:'shadow' }, confine:true, formatter:'{b}<br/>金额合计：{c} 万元' },
+  xAxis:{ type:'value', name:'万元', nameTextStyle:{ color:PAL.gray } },
+  yAxis:{ type:'category', data:['军队公开公告','边检 / 边境','监狱 / 看守所','能源与核设施','重大活动租赁','机场公安 / 飞行区','公安（省 / 市 / 县）'], axisLabel:{ color:PAL.dark, fontSize:12 } },
+  series:[{ type:'bar', barWidth:16, data:[237.88,532.79,576.76,740.69,1542.68,2808.22,3920.27], itemStyle:{ color:PAL.blue2 }, label:{ show:true, position:'right', color:PAL.dark, formatter:'{c}' } }]
+}));
+
+/* ============ 图5-3 分行业条数 ============ */
+make('chart-ind-cnt', baseOpt({
+  grid:{ left:170, right:40, top:20, bottom:36 },
+  tooltip:{ trigger:'axis', axisPointer:{ type:'shadow' }, confine:true, formatter:'{b}<br/>成交：{c} 条' },
+  xAxis:{ type:'value', name:'条', nameTextStyle:{ color:PAL.gray } },
+  yAxis:{ type:'category', data:['军队公开公告','边检 / 边境','监狱 / 看守所','能源与核设施','重大活动租赁','机场公安 / 飞行区','公安（省 / 市 / 县）'], axisLabel:{ color:PAL.dark, fontSize:12 } },
+  series:[{ type:'bar', barWidth:16, data:[6,3,4,6,9,6,20], itemStyle:{ color:PAL.blue3 }, label:{ show:true, position:'right', color:PAL.dark, formatter:'{c} 条' } }]
+}));
+
+/* ============ 图5-4 价格带阶梯 ============ */
+make('chart-price', baseOpt({
+  grid:{ left:140, right:70, top:20, bottom:48 },
+  tooltip:{ trigger:'axis', axisPointer:{ type:'shadow' }, confine:true, formatter:function(p){ var d=p[0].data; return d.name + '<br/>' + d.low + ' — ' + d.high + ' 万元' + (d.note?'<br/>'+d.note:''); } },
+  xAxis:{ type:'log', logBase:10, min:3, max:3500, name:'万元（对数刻度）', nameTextStyle:{ color:PAL.gray }, axisLabel:{ color:PAL.gray, formatter:function(v){ return v>=1000 ? (v/1000)+'千' : v; } } },
+  yAxis:{ type:'category', data:['机场级组合包（媒体测算）','要地防护整包','站级固定设备','便携探测设备','手持反制设备'], axisLabel:{ color:PAL.dark, fontSize:12 } },
+  series:[
+    { name:'b', type:'bar', stack:'p', silent:true, itemStyle:{ color:'transparent' },
+      data:[
+        { name:'机场级组合包（媒体测算）', value:500, low:500, high:3000, note:'36 氪调研整理，媒体测算口径' },
+        { name:'要地防护整包', value:105, low:105, high:248 },
+        { name:'站级固定设备', value:18, low:18, high:57 },
+        { name:'便携探测设备', value:5.5, low:5.5, high:17.9, note:'5.5 万元起' },
+        { name:'手持反制设备', value:4.0, low:4.0, high:6.16 }
+      ] },
+    { name:'range', type:'bar', stack:'p', barWidth:18, itemStyle:{ color:PAL.blue },
+      label:{ show:true, position:'right', color:PAL.dark, formatter:function(p){ return p.data.low + '—' + p.data.high; } },
+      data:[
+        { value:2500, low:500, high:3000 },
+        { value:143, low:105, high:248 },
+        { value:39, low:18, high:57 },
+        { value:12.4, low:5.5, high:17.9 },
+        { value:2.16, low:4.0, high:6.16 }
+      ] }
+  ]
+}));
+
+/* ============ 图7-1 功能分区 ============ */
+make('chart-zone', {
+  color:[PAL.blue, PAL.blue2, PAL.blue3, PAL.gold, PAL.gray],
+  textStyle:{ fontFamily:'Microsoft YaHei, 微软雅黑, sans-serif' },
+  tooltip:{ trigger:'item', confine:true, formatter:'{b}<br/>占比 {c}%' },
+  legend:{ bottom:0, textStyle:{ fontSize:12 }, itemWidth:14 },
+  series:[{ type:'pie', radius:['38%','64%'], center:['50%','44%'],
+    label:{ formatter:'{b}\n{c}%', fontSize:12 },
+    data:[
+      { name:'总部研发区', value:15 },
+      { name:'试飞总装区', value:35 },
+      { name:'试验检测区', value:20 },
+      { name:'场景验证区', value:20 },
+      { name:'配套服务区', value:10 }
+    ] }]
+});
+
+/* ============ 图9-1 投资构成堆叠 ============ */
+make('chart-inv', baseOpt({
+  tooltip:{ trigger:'axis', axisPointer:{ type:'shadow' }, confine:true },
+  legend:{ bottom:0, textStyle:{ fontSize:12 }, itemWidth:14 },
+  xAxis:{ type:'category', data:['起步园 A','标准园 B','旗舰园 C'] },
+  yAxis:{ type:'value', name:'亿元', nameTextStyle:{ color:PAL.gray } },
+  series:[
+    { name:'土地取得及一级开发', type:'bar', stack:'inv', data:[0.6,2.4,6.0] },
+    { name:'载体建安', type:'bar', stack:'inv', data:[2.4,9.2,26.4] },
+    { name:'公共平台设备与土建', type:'bar', stack:'inv', data:[0.9,4.0,14.4] },
+    { name:'算力数据与智慧园区', type:'bar', stack:'inv', data:[0.3,1.4,5.4] },
+    { name:'配套工程', type:'bar', stack:'inv', data:[0.5,1.8,4.8] },
+    { name:'前期及不可预见费', type:'bar', stack:'inv', data:[0.3,1.2,3.0] }
+  ]
+}));
+
+/* ============ 图9-2 营业收入 ============ */
+var YEARS = ['Y1','Y2','Y3','Y4','Y5','Y6','Y7','Y8','Y9','Y10'];
+make('chart-rev', baseOpt({
+  tooltip:{ trigger:'axis', confine:true, valueFormatter:function(v){ return fmt2(v) + ' 亿元'; } },
+  legend:{ top:0, right:10, textStyle:{ fontSize:12 } },
+  xAxis:{ type:'category', data:YEARS, boundaryGap:false },
+  yAxis:{ type:'value', name:'亿元', nameTextStyle:{ color:PAL.gray } },
+  series:[
+    { name:'起步园 A', type:'line', smooth:false, symbol:'circle', symbolSize:6, itemStyle:{ color:PAL.blue3 }, data:[0,1.70768,2.66208,2.62671,1.44569,1.62708,1.78643,1.82353,1.84148,1.86034] },
+    { name:'标准园 B', type:'line', smooth:false, symbol:'circle', symbolSize:6, itemStyle:{ color:PAL.blue2 }, data:[0,6.74776,10.44216,10.23793,5.50852,6.15279,6.76337,6.91177,6.98359,7.059] },
+    { name:'旗舰园 C', type:'line', smooth:false, symbol:'circle', symbolSize:6, itemStyle:{ color:PAL.blue }, data:[0,26.93712,40.69872,38.70931,18.66598,20.57109,22.62476,23.11416,23.36553,23.62947] }
+  ]
+}));
+
+/* ============ 图9-3 净利润 ============ */
+make('chart-profit', baseOpt({
+  tooltip:{ trigger:'axis', confine:true, valueFormatter:function(v){ return fmt2(v) + ' 亿元'; } },
+  legend:{ top:0, right:10, textStyle:{ fontSize:12 } },
+  xAxis:{ type:'category', data:YEARS, boundaryGap:false },
+  yAxis:{ type:'value', name:'亿元', nameTextStyle:{ color:PAL.gray } },
+  series:[
+    { name:'起步园 A', type:'line', smooth:false, symbol:'circle', symbolSize:6, itemStyle:{ color:PAL.blue3 }, data:[-0.03319,0.22446,0.43352,0.45599,0.37808,0.45526,0.54351,0.58186,0.61587,0.66391] },
+    { name:'标准园 B', type:'line', smooth:false, symbol:'circle', symbolSize:6, itemStyle:{ color:PAL.blue2 }, data:[-0.13797,1.03156,1.89485,1.95012,1.53427,1.82431,2.17285,2.32625,2.46763,2.67227] },
+    { name:'旗舰园 C', type:'line', smooth:false, symbol:'circle', symbolSize:6, itemStyle:{ color:PAL.blue }, data:[-0.44599,5.19917,8.80906,8.79911,5.96695,6.85958,8.03078,8.52412,9.00727,9.72429] }
+  ]
+}));
+
+/* ============ 图9-4 累计净现金流 ============ */
+make('chart-cumcf', baseOpt({
+  tooltip:{ trigger:'axis', confine:true, valueFormatter:function(v){ return fmt2(v) + ' 亿元'; } },
+  legend:{ top:0, right:10, textStyle:{ fontSize:12 } },
+  xAxis:{ type:'category', data:YEARS, boundaryGap:false },
+  yAxis:{ type:'value', name:'亿元', nameTextStyle:{ color:PAL.gray } },
+  series:[
+    { name:'起步园 A', type:'line', symbol:'circle', symbolSize:6, itemStyle:{ color:PAL.blue3 }, markLine:{ silent:true, symbol:'none', lineStyle:{ color:PAL.gray, type:'dashed' }, data:[{ yAxis:0 }] }, data:[-1.5,-3.16492,-4.04334,-3.28267,-2.61044,-1.87155,-1.05492,-0.21048,0.64409,1.50501] },
+    { name:'标准园 B', type:'line', symbol:'circle', symbolSize:6, itemStyle:{ color:PAL.blue2 }, data:[-6,-12.50854,-15.83185,-12.62816,-9.88242,-6.88874,-3.58862,-0.1772,3.27294,6.74431] },
+    { name:'旗舰园 C', type:'line', symbol:'circle', symbolSize:6, itemStyle:{ color:PAL.blue }, data:[-18,-35.3142,-41.97788,-29.20427,-19.38911,-8.80763,2.81877,14.81221,26.93807,39.13096] }
+  ]
+}));
+
+/* ============ 图9-5 敏感性龙卷风（A 档，基准 6.29%） ============ */
+make('chart-tornado', baseOpt({
+  grid:{ left:130, right:60, top:30, bottom:40 },
+  tooltip:{ trigger:'axis', axisPointer:{ type:'shadow' }, confine:true, formatter:function(p){
+    var row = p[0].data; return row.name + '<br/>基准 IRR：6.29%<br/>不利情景：' + row.unfav + '%<br/>有利情景：' + row.fav + '%';
+  }},
+  legend:{ top:0, right:10, data:['不利情景','有利情景'] },
+  xAxis:{ type:'value', name:'IRR 偏离基准（百分点）', nameTextStyle:{ color:PAL.gray }, axisLabel:{ color:PAL.gray } },
+  yAxis:{ type:'category', data:['贷款利率','出租率','租金/服务单价','投资额','达产速度','返税比例'], axisLabel:{ color:PAL.dark, fontSize:12 } },
+  series:[
+    { name:'不利情景', type:'bar', barWidth:14, stack:'t', itemStyle:{ color:PAL.red, borderRadius:[0,0,4,4] },
+      data:[
+        { name:'贷款利率', unfav:6.29, fav:6.29, value:0 },
+        { name:'出租率', unfav:5.33, fav:7.17, value:-0.96 },
+        { name:'租金/服务单价', unfav:5.18, fav:7.37, value:-1.11 },
+        { name:'投资额', unfav:4.08, fav:8.87, value:-2.21 },
+        { name:'达产速度', unfav:3.67, fav:7.56, value:-2.62 },
+        { name:'返税比例', unfav:5.66, fav:9.87, value:-0.63 }
+      ] },
+    { name:'有利情景', type:'bar', barWidth:14, stack:'t', itemStyle:{ color:PAL.blue, borderRadius:[4,4,0,0] },
+      data:[0,0.88,1.08,2.58,1.27,3.58] }
+  ]
+}));
+
+/* ============ 图10-1 区域投资强度区间 ============ */
+make('chart-region', baseOpt({
+  grid:{ left:90, right:70, top:20, bottom:40 },
+  tooltip:{ trigger:'axis', axisPointer:{ type:'shadow' }, confine:true, formatter:function(p){ var d=p[0].data; return d.name + '<br/>' + d.low + ' — ' + d.high + ' 万元/亩'; } },
+  xAxis:{ type:'value', name:'万元/亩', nameTextStyle:{ color:PAL.gray } },
+  yAxis:{ type:'category', data:['东北地区','西部地区','中部地区','东部沿海'], axisLabel:{ color:PAL.dark } },
+  series:[
+    { name:'b', type:'bar', stack:'r', silent:true, itemStyle:{ color:'transparent' },
+      data:[
+        { name:'东北地区', value:450, low:450, high:600 },
+        { name:'西部地区', value:450, low:450, high:750 },
+        { name:'中部地区', value:550, low:550, high:800 },
+        { name:'东部沿海', value:800, low:800, high:1000 }
+      ] },
+    { name:'区间', type:'bar', stack:'r', barWidth:18, itemStyle:{ color:PAL.blue2 }, label:{ show:true, position:'right', color:PAL.dark, formatter:function(p){ return p.data.low + '—' + p.data.high; } },
+      data:[
+        { value:150, low:450, high:600 },
+        { value:300, low:450, high:750 },
+        { value:250, low:550, high:800 },
+        { value:200, low:800, high:1000 }
+      ] }
+  ]
+}));
+
+/* ============ 图11-1 落地甘特图（custom） ============ */
+(function(){
+  var lanes = ['融资保障','招商落地','建设施工','报批报建'];
+  var colorMap = { '报批报建':PAL.blue, '建设施工':PAL.blue2, '招商落地':PAL.gold, '融资保障':PAL.gray };
+  var tasks = [
+    { lane:'报批报建', start:0,  dur:3,  name:'决策立项与可研评审' },
+    { lane:'报批报建', start:3,  dur:3,  name:'专项债入库与资金批复' },
+    { lane:'报批报建', start:6,  dur:6,  name:'用地出让与开工手续' },
+    { lane:'报批报建', start:12, dur:24, name:'分期验收与证照办理', short:'验收与证照办理' },
+    { lane:'报批报建', start:36, dur:24, name:'REITs 培育与异地复制报批', short:'REITs 培育与复制' },
+    { lane:'建设施工', start:6,  dur:6,  name:'一期厂房与试飞场开工' },
+    { lane:'建设施工', start:12, dur:24, name:'分期建成、竣工即投产', short:'分期建成投产' },
+    { lane:'建设施工', start:36, dur:24, name:'达产与扩容改造', short:'达产扩容改造' },
+    { lane:'招商落地', start:3,  dur:3,  name:'链主框架协议签约' },
+    { lane:'招商落地', start:6,  dur:6,  name:'首批场景开放与场景券' },
+    { lane:'招商落地', start:12, dur:24, name:'链主＋专精特新投产', short:'链主与专精特新投产' },
+    { lane:'招商落地', start:36, dur:24, name:'招商完成度 ≥70% 至达产', short:'招商≥70% 至达产' },
+    { lane:'融资保障', start:0,  dur:6,  name:'专项债申报入库' },
+    { lane:'融资保障', start:3,  dur:9,  name:'平台公司组建与引导基金落地' },
+    { lane:'融资保障', start:12, dur:24, name:'产业投资与 Pre-REITs 培育', short:'Pre-REITs 培育' },
+    { lane:'融资保障', start:36, dur:24, name:'REITs 发行与基金退出', short:'REITs 发行退出' }
+  ];
+  var data = tasks.map(function(t){
+    return { value:[lanes.indexOf(t.lane), t.start, t.start + t.dur, t.dur], name:t.name, short:t.short || '', lane:t.lane, itemStyle:{ color:colorMap[t.lane] } };
+  });
+  make('chart-gantt', {
+    textStyle:{ fontFamily:'Microsoft YaHei, 微软雅黑, sans-serif' },
+    grid:{ left:90, right:30, top:20, bottom:48 },
+    tooltip:{ confine:true, formatter:function(p){ var d=p.data; return d.lane + '：' + d.name + '<br/>第 ' + d.value[1] + ' 月 — 第 ' + d.value[2] + ' 月（持续 ' + d.value[3] + ' 个月）'; } },
+    xAxis:{ type:'value', min:0, max:60, interval:12, axisLabel:{ color:PAL.gray, formatter:function(v){ var m=v; if(m===0) return '0 月'; if(m===12) return '1 年'; if(m===24) return '2 年'; if(m===36) return '3 年'; if(m===48) return '4 年'; return '5 年'; } }, splitLine:{ lineStyle:{ color:PAL.soft } } },
+    yAxis:{ type:'category', data:lanes, axisLine:{ show:false }, axisLabel:{ color:PAL.dark, fontSize:13 } },
+    series:[{
+      type:'custom', renderItem:function(params, api){
+        var lane = api.value(0), s = api.value(1), e = api.value(2);
+        var y = api.coord([0, lane]); var h = api.size([0,1])[1] * 0.55;
+        var x1 = api.coord([s, lane])[0], x2 = api.coord([e, lane])[0];
+        return { type:'rect', shape:{ x:x1, y:y[1] - h/2, width:Math.max(x2-x1,2), height:h, r:3 }, style:api.style() };
+      },
+      encode:{ x:[1,2], y:0 }, data:data,
+      label:{ show:true, position:'insideLeft', color:'#fff', fontSize:11, hideOverlap:true,
+        formatter:function(p){ return p.value[3] >= 12 ? p.data.short : ''; } }
+    }]
+  });
+})();
+
+/* ============ 回到顶部 / 自适应 ============ */
+var toTop = document.getElementById('toTop');
+window.addEventListener('scroll', function(){ toTop.style.display = (window.scrollY > 400) ? 'block' : 'none'; });
+toTop.addEventListener('click', function(){ window.scrollTo({ top:0, behavior:'smooth' }); });
+window.addEventListener('resize', function(){ CHARTS.forEach(function(c){ c.resize(); }); });
+</script>
+
+</body>
+</html>
